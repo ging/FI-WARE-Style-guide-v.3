@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FI-WARE web style · Wordpress</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@crispinh2o FI-WARE web style">
+    <meta name="author" content="DIT UPM and Ogilvy">
+
+    <!-- Bootstrap styles -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
+    <!-- Bootstrap styles for this guide-->
+    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
+    <!-- Bootstrap rewrite styles for 3.1.1-->
+    <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
+    <!-- FI-WARE styles -->
+    <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
+    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
+
+    <!-- addons styles -->
+    <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/addons/backstretch/css/backstretch.css" rel="stylesheet">
+
+
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/FIWARE/img/logos/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-57-precomposed.png">
+  <head>
+  <body class="wordpress" data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+    <div id="wrap">
+<!-- NAVBAR
+      ================================================== -->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <i class="fa fa-angle-double-down"></i>
+          </a>
+          <div class="logo-header in">
+              <a href="index.html" class="logo">
+                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
+              </a>
+              <a href="index.html" class="brand">
+                <span>FI-</span>WARE
+              </a>    
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap  <i class="fa fa-angle-double-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="get-started.html">Get Started</a></li>
+                <li><a href="css.html">Css</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+              </ul>
+            </li>
+            <li><a href="identity-guide.html">Identity</a></li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                <li class="active"><a tabindex="-1" href="#">FI-WARE</a></li>
+                <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
+              </ul>
+            </li>
+            <li><a href="addons.html">Addons</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+    <!-- Subhead
+      ================================================== -->
+      <header class="jumbotron subhead" id="overview">
+        <div class="container">
+          <h4>FI-WARE</h4>
+          <p class="lead">A blogging tool bassed on Suffusion Wordpress.</p>
+        </div>
+      </header>
+
+      <div class="container">
+
+        <!-- Docs nav
+        ================================================== -->
+        <div class="row row-principal">
+          <div class="col-md-9">
+            <!-- File structure
+            ================================================== -->
+            <div class="bs-docs-section">
+              <h1 id="template-wp" class="page-header">
+                Template
+              </h1>
+              <h2>Structure</h2>
+              <p class="lead">Download the FI-WARE wordpress template <a href="http://wordpress.org/themes/suffusion">Suffusion</a>.</p>
+            </div>
+
+          <!-- Twitter timeline
+            ================================================== -->
+            <div class="bs-docs-section">
+              <h1 id="twitter-wp" class="page-header">
+                Twitter timeline
+              </h1>
+              <h3>You need generate a code from Twitter account.</h3>
+              <p class="lead">How to make it? <a href="http://en.support.wordpress.com/widgets/twitter-timeline-widget/">wordpress support</a></p>
+              <div class="bs-example" style="min-height: 390px">
+                <div class="twitter col-md-3">
+                  <a class="twitter-timeline" data-tweet-limit="2" href="https://twitter.com/FIware" data-widget-id="378538709693382657">Tweets by @FIware</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                  </script>
+                </div>
+              </div>
+
+<div class="highlight">
+<pre>
+<code class="html">
+<span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"twitter-timeline"</span> <span class="na">data-tweet-limit=</span><span class="s">"2"</span> <span class="na">href=</span><span class="s">"https://twitter.com/FIware"</span> <span class="na">data-data-widget-id=</span><span class="s">"378538709693382657"</span><span class="nt">&gt;</span>
+  Tweets by @FIware 
+<span class="nt">&lt;a</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script&gt;</span> 
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+<span class="nt">&lt;/script&gt;</span> 
+</code></pre></div>    
+              <p><span class="label label-info">Heads up!</span> Any wordpress widget of Twitter time line is more slow.  This is a better solution at the moment.</p>
+            </div>
+
+
+
+          <!-- Examples
+            ================================================== -->
+            <div class="bs-docs-section" id="examples-wp">
+              <h1 id="examples-wp" class="page-header">
+                Examples<small><a href="http://lab.fi-ware.eu/"> >>>>> Go to this site</small></a>
+              </h1>
+            
+
+              <ul class="thumbnails">   
+                <li class="col-md-6 col-sm-6 col-xs-12">   
+                  <div class="thumbnail">
+                    <h5 class="ellipsis">Index of FI-LAB</h5>
+                    <small>@ogilvy</small>
+                    <div class="wp-example1">
+                      <div class="backstretch">
+                      </div>
+                    </div>
+
+                    <div class="caption">
+                      <p>The principal Social tool</p>
+                      <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-WARE.jpg" download="index_FI-LAB.jpg" class="btn btn-primary">download</a> <a href="#example-1" data-toggle="modal" class="btn">See</a></p>
+                    </div>
+                  </div>
+                </li>
+                <!-- Modal 1-->
+                 <div id="example-1" class="wp-image modal bs-example-modal-lg fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 class="modal-title" id="myModalLabel">Index of FI-WARE</h3>
+                        <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-WARE.jpg" download="index_FI-WARE.jpg">download image</a></h6>
+                      </div>
+                      
+                      <div class="modal-body">
+                        <div class="wp-example1">
+                          <p class="alert alert-danger fade in"> please resize your browser.  We work´s it!!<button type="button" class="close" data-dismiss="alert">×</button></p>
+                          <div class="backstretch">
+                        </div>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div>
+                </div>
+
+
+                <li class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="thumbnail">
+                    <h5 class="ellipsis">Comments by Admin of FI-WARE</h5>
+                    <small>@ogilvy</small>
+                    <div class="wp-example2">
+                      <div class="backstretch">
+                      </div>
+                    </div>
+                    <div class="caption">
+                      <p>Clean and simple</p>
+                      <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg" download="by-admin.jpg" class="btn btn-primary">download</a> <a href="#example-2" data-toggle="modal" class="btn">See</a></p>
+                    </div>
+                  </div>
+                </li>
+                <!-- Modal 2-->
+                <div id="example-2" class="wp-image modal bs-example-modal-lg fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 class="modal-title" id="myModalLabel">Comments by Admin of FI-WARE</h3>
+                        <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg" download="by-admin.jpg">download image</a></h6>
+                      </div>
+                      
+                      <div class="modal-body">
+                        <div class="wp-example1">
+                          <p class="alert alert-danger fade in"> please resize your browser.  We work´s it!!<button type="button" class="close" data-dismiss="alert">×</button></p>
+                          <div class="backstretch">
+                        </div>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div>
+                </div>
+            </div>         
+          </div>
+          <div class="col-md-3">
+              <div class="bs-docs-sidebar hidden-print affix" role="complementary" data-spy="affix" data-offset-top="96" data-offset-bottom="0">
+                <ul class="nav bs-docs-sidenav">
+                  <li><a href="#template-wp">Template</a></li>
+                  <li><a href="#twitter-wp">Twitter timeline</a></li>
+                  <li><a href="#examples-wp">Examples</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--/.wrap -->
+
+        <!-- FOOTER -->
+        <footer>
+          <div class="col-md-12 footer-box">
+            <p> Designed by 
+              <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
+              <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.
+            </p>
+          </div>
+        </footer>
+
+
+      <!-- Le javascript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="assets/bootstrap/js/jquery.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- Backstretch -->
+      <script src="assets/addons/backstretch/js/jquery.backstretch.min.js"></script>
+      <script>
+        $(".wp-example1").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-WARE.jpg");
+        $(".wp-example2").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin_FI-WARE.jpg");
+      </script>
+
+<!-- Scroll up -->
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
+
+    <script>
+
+      // scrollUp full options
+      $(function () {
+        $.scrollUp({
+              scrollName: 'scrollUp', // Element ID
+              scrollDistance: 300, // Distance from top/bottom before showing element (px)
+              scrollFrom: 'top', // 'top' or 'bottom'
+              scrollSpeed: 300, // Speed back to top (ms)
+              easingType: 'linear', // Scroll to top easing (see http://easings.net/)
+              animation: 'fade', // Fade, slide, none
+              animationInSpeed: 200, // Animation in speed (ms)
+              animationOutSpeed: 200, // Animation out speed (ms)
+              scrollText: '<i class="fa fa-arrow-circle-up icon-2x"></i>', // Text for element, can contain HTML
+              scrollTitle: 'go-top', // Set a custom <a> title if required. Defaults to scrollText
+              scrollImg: false, // Set true to use image
+              activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+              zIndex: 2147483647 // Z-Index for the overlay
+        });
+      });
+    </script>
+  </body>
+</html>
