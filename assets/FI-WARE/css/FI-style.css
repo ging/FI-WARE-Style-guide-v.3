@@ -95,9 +95,9 @@ h1.text-font{
 }
 
 .fi-band {
-  width: 5px;
+  width: 3px;
   float: left;
-  min-height: 55px;
+  min-height: 65px;
   margin-right: 5px; 
   background-repeat:no-repeat;
   background: rgb(96,193,207); /* Old browsers */
@@ -114,7 +114,7 @@ h1.text-font{
   min-height: 27px;
 }
 
-.level-two h3 first-child{
+.level-two h3{
   padding-top: 70px;
 }
 
