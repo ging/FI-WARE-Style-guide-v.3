@@ -44,6 +44,40 @@ h1, h2, h3, h4, h5, h6{
   font-weight: normal;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 1px 0;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 66px;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 53px;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 44px;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+h6 {
+  font-size: 15px;
+  line-height: 23px;
+}
+
 .text-font{
   font-family: "Verdana";
 }
@@ -143,6 +177,10 @@ margin-top: -23px;
 #index .jumbotron{
   background-color: #00D3DE;
   min-height: 85px;
+}
+
+#index #wrap{
+  margin: 0 auto -73px;
 }
 
 #index .lead{
@@ -286,8 +324,9 @@ color: #00D3DE;
 */
 h5.sg {
   color: #CCC;
-  margin: 7px 14px 7px;
+  margin: 8px 14px 0px;
   float: left;
+  font-size: 20px;
 }
 a.menu-down{
   float: right !important;
@@ -374,6 +413,10 @@ a.logo{
   color: #002d67 !important;
 }
 
+.navbar-header {
+  padding-top: 1px;
+}
+
 .navbar .nav > .active > a {
   font-weight: bold;
 }
@@ -381,6 +424,11 @@ a.logo{
 .navbar .nav > .active > a, .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
   color: #002759;
   background-color: #FAFAFA;
+}
+
+.navbar .nav > li > a {
+  padding: 14px 20px 9px 20px;
+  font-size: 14px;
 }
 
 .navbar .nav > li > a:hover{
@@ -415,12 +463,22 @@ a.logo{
   background-color: #002759;
 }
 
-
 .nav-collapse .dropdown-menu li.active a:hover{
   background-color: #002759 !important;
   color: #FFF !important;
 }
 
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-toggle i {
+  font-size: 25px;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
 
 /* Footer */
 .footer-box {
