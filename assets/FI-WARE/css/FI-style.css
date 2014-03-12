@@ -114,7 +114,7 @@ h1.text-font{
   min-height: 27px;
 }
 
-.level-two h3{
+.level-two h3:first-child{
   padding-top: 70px;
 }
 
