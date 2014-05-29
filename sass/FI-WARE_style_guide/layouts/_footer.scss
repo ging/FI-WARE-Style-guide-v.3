@@ -1,0 +1,19 @@
+footer {
+  height: 93px;
+  padding: 7px 15px 0;
+  margin-top: 20px;
+  border-top: 1px solid #F0F0F0;
+  p{
+    @media (max-width: $screen-xs-max){
+      margin-bottom: 9px;
+    }
+  }
+  img{
+    float: right;
+  }
+}
+
+#push{
+  height: 100px;
+  clear: both;
+}

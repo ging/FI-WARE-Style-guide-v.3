@@ -1,44 +1,22 @@
 <html lang="en">
-  <head>
+    <head>
     <meta charset="utf-8">
-    <title>FI-WARE web style · Addons</title>
+    <title>FI-WARE web style - Addons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FI-WARE web style">
     <meta name="author" content="DIT UPM and Ogilvy">
 
     <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
-    <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
-    <!-- FI-WARE styles -->
-    <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
-
-    <!-- addons styles -->
-    <link href="assets/addons/autosize/css/autosize.css" rel="stylesheet">
-    <link href="assets/addons/select2/css/select2.css" rel="stylesheet">
-    <link href="assets/addons/tour/css/bootstrap-tour.css" rel="stylesheet">
-    <link href="assets/addons/backstretch/css/backstretch.css" rel="stylesheet">
-    <link href="assets/addons/maxlength/css/maxlength.css" rel="stylesheet">
-    <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/addons/select2/css/select-2-rewrite.css" rel="stylesheet">
-    <link href="assets/addons/tinyscrollbar/css/tinyscrollbar.css" rel="stylesheet">
-    <link href="assets/addons/tinyscrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
 
 
-
-<!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/FIWARE/img/logos/ico/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-57-precomposed.png">
-  
-
-  </head>
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/logos/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logos/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logos/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logos/ico/apple-touch-icon-72-precomposed.png"
+    <link rel="apple-touch-icon-precomposed" href="img/logos/ico/apple-touch-icon-57-precomposed.png">
+  <head>
 
   <body class="addons" data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
     <div id="wrap">
@@ -54,7 +32,7 @@
           </a>
           <div class="logo-header in">
               <a href="index.html" class="logo">
-                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
+                <img alt="FI-WARE" src="img/logos/header-logo.png">
               </a>
               <a href="index.html" class="brand">
                 <span>FI-</span>WARE
@@ -290,14 +268,13 @@
  <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap/bootstrap.min.js"></script>
 
-    
     <!-- addons js -->
 
-<!-- Tour -->
-    <script src="assets/addons/tour/js/bootstrap-tour.min.js"></script>
+    <!-- Tour -->
+    <script src="addons/tour/js/bootstrap-tour.min.js"></script>
 
     <script type="text/javascript">
       var tour = new Tour(false);
@@ -376,7 +353,7 @@
 
 
 <!-- autosize -->
-    <script src='assets/addons/autosize/js/jquery.autosize.js'></script>
+    <script src='addons/autosize/js/jquery.autosize.js'></script>
     <script>
       $(function(){
         $('.normal').autosize();
@@ -385,22 +362,22 @@
     </script>
 
 <!-- Backstretch -->
-    <script src="assets/addons/backstretch/js/jquery.backstretch.min.js"></script>
+    <script src="addons/backstretch/js/jquery.backstretch.min.js"></script>
     <script type="text/javascript">
 
-      $(".backstretch-example").backstretch("assets/addons/backstretch/img/backstretch-example1.jpg");
+      $(".backstretch-example").backstretch("addons/backstretch/img/backstretch-example1.jpg");
 
 
       $(".backstretch-example-2").backstretch([
-        "assets/addons/backstretch/img/backstretch-example2.jpg",
-        "assets/addons/backstretch/img/backstretch-example3.jpg"
+        "addons/backstretch/img/backstretch-example2.jpg",
+        "addons/backstretch/img/backstretch-example3.jpg"
         ], {
           fade: 750,
           duration: 4000
       });
     </script>
 <!-- Maxlength -->
-    <script src="assets/addons/maxlength/js/bootstrap-maxlength.js"></script>
+    <script src="addons/maxlength/js/bootstrap-maxlength.js"></script>
     <script>
       $(document).ready(function(){
         $('input#defaultconfig').maxlength()

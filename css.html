@@ -2,32 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>FI-WARE web style · Css</title>
+    <title>FI-WARE web style - Css</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FI-WARE web style">
-    <meta name="author" content="@crispinh2o DIT UPM and Ogilvy">
+    <meta name="author" content="DIT UPM and Ogilvy">
+
     <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
-    <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
-    <!-- FI-WARE styles -->
-    <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
-
-    <!-- addons styles -->
-    <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
 
 
-<!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/FIWARE/img/logos/ico/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-57-precomposed.png">
-
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/logos/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logos/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logos/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logos/ico/apple-touch-icon-72-precomposed.png"
+    <link rel="apple-touch-icon-precomposed" href="img/logos/ico/apple-touch-icon-57-precomposed.png">
   <head>
 
 <body>
@@ -45,7 +34,7 @@
           </a>
           <div class="logo-header in">
               <a href="index.html" class="logo">
-                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
+                <img alt="FI-WARE" src="img/logos/header-logo.png">
               </a>
               <a href="index.html" class="brand">
                 <span>FI-</span>WARE
@@ -524,7 +513,7 @@
   <div class="level-two">
     <h3 id="webfont"><div class="fi-band"></div> Web fonts</h3>
     <p>We need include css rules for use a corporate font family by <code>@font-face{}</code></p>
-    <div class="bs-docs-example">
+    <div class="bs-example">
       <h2>This text is writed witch NeoTech.</h2>
     </div>
 <div class="highlight"><pre><code class="css"><span class="nt">@font-face{</span> 
@@ -552,7 +541,7 @@
             <td class="type-info">Semibold 30px</td>
           </tr>
           <tr>
-            <td><h3>h3. Bootstrap heading</h3></td>
+            <td><h3 style="padding-top:0">h3. Bootstrap heading</h3></td>
             <td class="type-info">Semibold 24px</td>
           </tr>
           <tr>
@@ -583,13 +572,13 @@
       <table class="table">
         <tbody>
           <tr>
-            <td><h1>h1. Bootstrap heading <small>Secondary text</small></h1></td>
+            <td><h1>h1. Bootstrap heading</h1></td>
           </tr>
           <tr>
             <td><h2>h2. Bootstrap heading <small>Secondary text</small></h2></td>
           </tr>
           <tr>
-            <td><h3>h3. Bootstrap heading <small>Secondary text</small></h3></td>
+            <td><h3 style="padding-top:0">h3. Bootstrap heading <small>Secondary text</small></h3></td>
           </tr>
           <tr>
             <td><h4>h4. Bootstrap heading <small>Secondary text</small></h4></td>
@@ -617,13 +606,13 @@
       <table class="table">
         <tbody>
           <tr>
-            <td><h1 class="text-font">h1. Bootstrap heading <small>Secondary text</small></h1></td>
+            <td><h1 class="text-font">h1. Bootstrap heading</h1></td>
           </tr>
           <tr>
             <td><h2 class="text-font">h2. Bootstrap heading <small>Secondary text</small></h2></td>
           </tr>
           <tr>
-            <td><h3 class="text-font">h3. Bootstrap heading <small>Secondary text</small></h3></td>
+            <td><h3 style="padding-top:0" class="text-font">h3. Bootstrap heading <small>Secondary text</small></h3></td>
           </tr>
           <tr>
             <td><h4 class="text-font">h4. Bootstrap heading <small>Secondary text</small></h4></td>
@@ -2844,7 +2833,6 @@
           </div>
         </div>
     </div>
-  </div>
 </div>
 
     <!-- FOOTER -->
@@ -2860,12 +2848,12 @@
      <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap/bootstrap.min.js"></script>
 
-<!-- Scroll up -->
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
+    <!-- Scroll up -->
+    <script type="text/javascript" src="addons/scroll-up/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="addons/scroll-up/js/jquery.scrollUp.js"></script>
 
     <script>
 

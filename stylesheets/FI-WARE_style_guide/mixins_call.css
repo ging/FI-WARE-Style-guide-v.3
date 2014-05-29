@@ -1,0 +1,80 @@
+/*
+Syntax error: File to import not found or unreadable: animation.
+              Load paths:
+                /Users/crispin/Documents/UPM/my-new-project/sass
+                /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/frameworks/blueprint/stylesheets
+                /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/frameworks/compass/stylesheets
+                /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets
+                Compass::SpriteImporter
+                /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets
+        on line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins_call.scss
+
+1: /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins_call.scss
+
+Backtrace:
+/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins_call.scss:2
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/path.rb:31:in `create'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/state/directory.rb:26:in `block in created'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `each'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `created'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/state/directory.rb:17:in `refresh'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:87:in `perform'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/bin/compass:44:in `call'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/bin/compass:19:in `load'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/bin/compass:19:in `<main>'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/crispin/.rvm/gems/ruby-1.9.3-p327/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: animation.\A               Load paths:\A                 /Users/crispin/Documents/UPM/my-new-project/sass\A                 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/frameworks/blueprint/stylesheets\A                 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.6/frameworks/compass/stylesheets\A                 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets\A                 Compass::SpriteImporter\A                 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets\A         on line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins_call.scss\A \A 1: /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins_call.scss"; }

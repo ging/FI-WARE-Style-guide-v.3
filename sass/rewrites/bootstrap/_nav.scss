@@ -1,0 +1,70 @@
+.nav li a {
+  padding: 14px 20px 9px 20px;
+  font-size: 14px;
+  text-shadow: none;
+  font-family: $corporate-font-family-sans-serif-Regular;
+  color: $navbar-default-link-color;
+}
+
+.nav li a:hover{
+  border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  box-shadow: none !important;
+  background-color: #FFF !important;
+  color: #00D3DE !important;
+}
+
+.nav-tabs a {
+  color: $gray-lighter;
+}
+
+.nav-tabs a:hover {
+      color: $auxiliarColor;
+}
+
+.nav-tabs a .active{
+      color: $brand-primary;
+}
+
+.navbar-search {
+  margin: 15px 0 0 0;
+  width: 100%;
+  position: inherit !important;
+  z-index: 1 !important;
+}
+
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus{
+  color: $brand-primary;
+  background-color: #fcfcfc;
+}
+
+.nav > li > a:hover, 
+.nav > li > a:focus{
+  background-color: #fff;
+}
+
+.nav-list > .active > a, .nav-list > .active > a:hover{
+  color: $white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(0, 147, 198);
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover{
+  background-color: #002759;
+  color: $white;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-toggle i {
+font-size: 25px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}

@@ -23,7 +23,6 @@ assets/
   │       ├── bootstrap.min.js
   │       └── jquery.min.js
   │
-  │  
   │
   ├── bootstrap-rewrite/
   │   └── css/
