@@ -7,15 +7,16 @@
     <meta name="author" content="DIT UPM and Ogilvy">
 
     <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
+
+    <!-- Bootstrap rewrite -->
     <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
+
     <!-- FI-WARE styles -->
+    <link href="assets/FI-WARE/css/docs.css" rel="stylesheet">
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
 
     <!-- addons styles -->
     <link href="assets/addons/autosize/css/autosize.css" rel="stylesheet">
@@ -38,54 +39,66 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-57-precomposed.png">
   
 
+  
+      <script src="assets/addons/tinyscrollbar/js/jquery.mousewheel.js"></script>
+      <script src="assets/addons/tinyscrollbar/js/perfect-scrollbar.js"></script>
+      
+<script type="text/javascript">
+      $(document).ready(function ($) {
+        $('#description').perfectScrollbar({
+          wheelSpeed: 20,
+          wheelPropagation: false
+        });
+      });
+    </script>
+
   </head>
 
   <body class="addons" data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
     <div id="wrap">
 
- <!-- NAVBAR
+      <!-- NAVBAR
       ================================================== -->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <i class="fa fa-angle-double-down"></i>
-          </a>
-          <div class="logo-header in">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="menu-down btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <i class="fa fa-angle-double-down"></i>
+            </a>
+            <div class="logo-header">
               <a href="index.html" class="logo">
-                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
+                <img alt="FI-WARE" class="logo" src="assets/FI-WARE/img/logos/header-logo.png">
               </a>
               <a href="index.html" class="brand">
                 <span>FI-</span>WARE
               </a>    
             </div>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bootstrap <i class="fa fa-angle-double-down"></i></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li><a tabindex="-1" href="get-started.html">Get Started</a></li>
+                    <li><a tabindex="-1" href="css.html">Css</a></li>
+                    <li><a tabindex="-1" href="components.html">Components</a></li>
+                    <li><a tabindex="-1" href="javascript.html">Javascript</a></li>
+                  </ul>
+                </li>
+                <li><a href="identity-guide.html">Identity</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
+                    <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
+                  </ul>
+                </li>
+                <li class="active"><a href="#">Addons</a></li>
+                <li class="active"><a href="other.html">others</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap  <i class="fa fa-angle-double-down"></i></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="get-started.html">Get Started</a></li>
-                <li><a href="css.html">Css</a></li>
-                <li><a href="components.html">Components</a></li>
-                <li><a href="javascript.html">Javascript</a></li>
-              </ul>
-            </li>
-            <li><a href="identity-guide.html">Identity</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
-                <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
-              </ul>
-            </li>
-            <li class="active"><a href="#">Addons</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
+      </div>
 
       <!-- Subhead
       ================================================== -->
@@ -97,73 +110,90 @@
       </header>
       
       <div class="container">
-        <div class="row row-principal">
-          <div class="col-md-9">
+        <!-- Docs nav
+        ================================================== -->
+        <div class="row">
+          <div class="span3 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav affix-top">
+              <li class="active"><a href="#tour"><i class="fa fa-chevron-right"></i> Tour</a></li>
+              <li class=""><a href="#backstretch"><i class="fa fa-chevron-right"></i> Backstretch</a></li>
+              <li class=""><a href="#font-awesome"><i class="fa fa-chevron-right"></i> Font awesome</a></li>
+              <li class=""><a href="#maxlength"><i class="fa fa-chevron-right"></i> Maxlength</a></li>
+              <li class=""><a href="#select2"><i class="fa fa-chevron-right"></i> Select2</a></li>
+              <li class=""><a href="#autosize"><i class="fa fa-chevron-right"></i> Autosize</a></li>
+            </ul>
+          </div>
+          <div class="span9">
 
  <!-- Tour
         ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="tour" class="page-header">
-                Tour
-              </h1>
+            <section id="tour">
+              <div class="page-header">
+                <h1>Tour</h1>
+              </div>
               <p class="lead">Quick and easy way to build your product tours with Twitter Bootstrap Popovers.<small>You can see more in <a href="https://github.com/sorich87/bootstrap-tour">GitHub</a></small></p>
               <h2 id="welcome"> Start here!</h2>
-            </div>
+            </section>
 
  <!-- Backstretch
         ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="backstretch" class="page-header">
-                Backstretch
-              </h1>
+            <section id="backstretch">
+              <div class="page-header">
+                <h1>Backstretch</h1>
+              </div>
               <p class="lead">a simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element.<small>You can see more in <a href="https://github.com/srobbin/jquery-backstretch">GitHub</a></small></p>
               <div class="level-one">
-               
-              
-                  <h3>Slideshow</h3>  
-                  <div class="thumbnail" style="min-height: 251px">
-                    <div class="backstretch-example-2">
-                      <div class="backstretch">
-                      </div>
+                <h3>Basic</h3>
+                <div class="backstretch-box">
+                  <div class="backstretch-example">
+                    <div class="thumbnail">
+                      <div class="backstretch"></div>
                     </div>
                   </div>
-                    
-              </div>          
-            </div>
-         
+                  <h3>Slideshow</h3>
+                  <div class="backstretch-box">
+                    <div class="backstretch-example-2">
+                      <div class="thumbnail">
+                        <div class="backstretch"></div>
+                      </div>
+                    </div>
+                  </div>  
+                </div>          
+              </div>
+            </section>
 
 
 
  <!-- Font Awesome
         ================================================== -->
-            <div class="bs-docs-section font-awesome">
-              <h1 id="font-awesome" class="page-header">
-                Font Awesome
-              </h1>
+            <section id="font-awesome">
+              <div class="page-header">
+                <h1>Font Awesome</h1>
+              </div>
               <p class="lead">Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.<small>You can see more in <a href="https://github.com/FortAwesome/Font-Awesome">GitHub</a></small></p>
-              <div class="row">
-                <div class="col-md-4">
+              <div class="row level-two">
+                <div class="span4">
                   <h5><i class="fa fa-flag"></i> One Font, 361 Icons</h5>
                 </div>
-                <div class="col-md-4">
+                <div class="span4">
                   <h5><i class="fa fa-pencil"></i> CSS Control</h5>
                 </div>
-                <div class="col-md-4">
+                <div class="span4">
                   <h5><i class="fa fa-expand"></i> Infinite Scalability</h5>
                 </div>
-                <div class="col-md-4">
+                <div class="span4">
                   <h5><i class="fa fa-check"></i> IE7 Support</h5>
                 </div>
-                <div class="col-md-4">
+                <div class="span4">
                   <h5><i class="fa fa-eye"></i> Perfect on Retina Displays</h5>
                 </div>
-                <div class="col-md-4">
+                <div class="span4">
                   <h5><i class="fa fa-thumbs-o-up"></i> Made for Bootstrap</h5>
                 </div>
-                <div class="col-md-4">
+                <div class="span4">
                   <h5><i class="fa fa-desktop"></i> Desktop Friendly</h5>
                 </div>
-                <div class="col-md-4">
+                <div class="span4">
                   <h5><i class="fa fa-search"></i> Screen Reader Compatible</h5>
                 </div>
               </div>
@@ -172,41 +202,42 @@
                   <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
                 </span>
               </div>
-            </div>
+            </section>
 
- <!-- MaxLength
+ <!-- MaxLenght
         ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="maxlength" class="page-header">
-                MaxLenght
-              </h1>
+            <section id="maxlength">
+              <div class="page-header">
+                <h1>MaxLenght</h1>
+              </div>
               <p class="lead">Bootstrap maxlength is a a visual feedback indicator for the maxlength attribute and supports textarea as well as inputs. Even on old IE.<small>You can see more in <a href="https://github.com/mimo84/bootstrap-maxlength/">GitHub</a></small> </p> 
               <div class="level-one">
                 <h2>Usage</h2>
                 <p>The default usage badge will show up by default when the remaining chars are 10 or less.</p>
                 <p>The field counter can be positioned at the top, bottom, left or right. You can also place the maxlength indicator on the corners: bottom-right, top-right, top-left, bottom-left and centered-right.
-                All you need to do is specify the placement option, with one of those strings. If none is specified, the positioning will be defauted to 'bottom'</p><p> You can adjust all to your needs.</p>
+      All you need to do is specify the placement option, with one of those strings. If none is specified, the positioning will be defauted to 'bottom'</p><p> You can adjust all to your needs.</p>
                 <div class="bs-docs-example">
                   <input type="text" class="form-control" maxlength="25" name="alloptions" id="alloptions">
                 </div>
-                <div class="bs-callout bs-callout-imfo">
-                <h4>Heads up!</h4>
-                <p> Please note: if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
+
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><ol class="linenums"><li class="L0"><span class="pun"><span class="pln">$</span><span class="pun">(</span><span class="str">'input.className'</span><span class="pun">).</span><span class="pln">maxlength</span><span class="pun">({</span></span></li><li><span class="pln">alwaysShow</span><span class="pun">:</span><span class="pln"> </span><span class="literal"><span class="kwd">true</span></span><span class="pun">,</span></li><li><span class="pln">threshold</span><span class="pun">:</span><span class="pln"> </span><span class="number"><span class="lit">10</span></span><span class="pun">,</span></li><li><span class="pln">warningClass</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">"label label-success"</span></span><span class="pun">,</span></li><li><span class="pln">limitReachedClass</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">"label label-important"</span></span><span class="pun">,</span></li><li><span class="pln">separator</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">' of '</span></span><span class="pun">,</span></li><li><span class="pln">preText</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">'You have '</span></span><span class="pun">,</span></li><li><span class="pln">postText</span><span class="pun">:</span><span class="pln"> </span><span class="tag"><span class="str">' chars remaining.'</span></span><span class="pun">,</span></li><li><span class="pln">validate</span><span class="pun">:</span><span class="pln"> </span><span class="literal"><span class="kwd">true</span></span></li><li><span class="pun">});</span></li></ol></li></ol></pre>
               </div>
-              </div>
-            </div>
+
+              <p><span class="label label-info">Heads up!</span> Please note: if the <code>alwaysShow</code> option is enabled, the <code>threshold</code> option is ignored.</p>
+            </section>
 
 
 
  <!-- Select2
         ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="select2" class="page-header">
-                Select2
-              </h1>
+            <section id="select2">
+              <div class="page-header">
+                <h1>Select2</h1>
+              </div>
               <p class="lead">Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.</p> 
-
-              <div class="level-tree">
+                     
+              <div>
+              <div class="level-two">
                 <h3>Search / Select</h3>
                 <select id="mySel" style="width:400px;" >
                   <option>One</option>
@@ -217,7 +248,7 @@
                   <option>Six</option>
                 </select>
               </div>
-              <div class="level-tree">
+              <div class="level-two">
                 <h3>Multiple Select</h3>
                 <select id="mySel2" class="select2" multiple="multiple" style="width:400px;">
                   <option>One</option>
@@ -228,70 +259,98 @@
                   <option>Six</option>
                 </select>
               </div>
-            </div>
+            </section>
           
 
  <!-- Autosize
         ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="autosize" class="page-header">
-                Autosize
-              </h1>
+            <section id="autosize">
+              <div class="page-header">
+                <h1>Autosize</h1>
+              </div>
               <p class="lead">jQuery plugin for dynamic textarea sizing.<small>You can see more in <a href="https://github.com/jackmoore/autosize/tree/master">GitHub</a></small></p>
               <div class="row level-two">
-                <div class="col-md-4 col-sm-4">
+                <div class="span4">
                   <textarea class='autosize normal'>Not animated.</textarea>
                 </div>
-                <div class="col-md-4 col-sm-4">
+                <div class="span4">
                   <textarea class='autosize animated'>With CSS transition.</textarea>
                 </div>
               </div>
+            </section>
             </div>
-          </div>
-
-
-          <div class="col-md-3">
-            <div class="bs-docs-sidebar hidden-print affix" role="complementary" data-spy="affix" data-offset-top="96" data-offset-bottom="0">
-              <ul class="nav bs-docs-sidenav">
-                <li>
-                  <a href="#tour">Tour</a>
-                </li>
-                <li>
-                  <a href="#backstretch">Backstretch</a>
-                </li>
-                <li>
-                  <a href="#font-awesome">Font Awesome</a>
-                </li>
-                <li>
-                  <a href="#maxlength">Maxlength</a>
-                </li>
-                <li>
-                  <a href="#select2">Select2</a>
-                </li>
-                <li>
-                  <a href="#autosize">Autosize</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
+
+
+
+ <!-- Tiniscrollbar
+        ================================================== -->
+<h1 style="text-align:center">Default; wheelSpeed:10</h1>
+    <div id="Default" class="contentHolder">
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta aliquet gravida. Aenean pulvinar blandit orci vel fermentum. Phasellus viverra pulvinar viverra. Quisque et sagittis ante. Nulla sem neque, fermentum at laoreet vel, rhoncus sit amet nisl. Donec consectetur urna ac massa placerat ac pharetra sem mollis. Integer nibh urna, placerat vel placerat in, tempor at nisi. Aenean rutrum, enim sit amet rutrum fermentum, magna justo volutpat massa, lacinia adipiscing nisl magna eget nibh. In auctor, nibh eget faucibus tristique, arcu turpis molestie orci, placerat suscipit diam nibh et erat. Curabitur tempus lectus quis odio ornare porta.</p>
+  <p>Aenean odio libero, eleifend eu luctus quis, accumsan ac risus. Mauris egestas bibendum tortor vel semper. Ut egestas, erat ut rutrum tempus, massa erat commodo arcu, id congue justo odio ac erat. Quisque non purus et nunc consequat scelerisque. Vestibulum vitae tristique dolor. Suspendisse ac quam interdum libero euismod tempus. Sed a ante justo, varius commodo urna.</p>
+  <p>Ut ante felis, malesuada eu eleifend convallis, tempor eget tellus. Vestibulum rhoncus elementum dui a sagittis. Praesent eu nunc vitae massa cursus luctus ac eget massa. Etiam sagittis nibh nisi, vel sagittis felis. Aliquam vulputate mauris id nunc pellentesque at fermentum lacus dapibus. Donec pretium consectetur magna sit amet egestas. Ut dignissim adipiscing purus sit amet lobortis.</p>
+  <p>Curabitur ullamcorper, nisi quis convallis luctus, nunc nisi mollis felis, eu mattis nunc sapien sed sapien. Vestibulum in nisi mauris, mattis sagittis lacus. Pellentesque in sem augue, a blandit augue. Aliquam bibendum diam ac erat imperdiet vestibulum. Vivamus dignissim, quam in feugiat scelerisque, enim risus interdum turpis, in vehicula ante lorem eu erat. Mauris ac turpis luctus libero pulvinar ultricies. Praesent porttitor nulla non risus porta consequat. Nunc vulputate porta nulla non ultrices. Donec et magna eu nisl elementum scelerisque. Curabitur in vehicula dui.</p>
+  <p>Suspendisse eu nibh in libero euismod condimentum eget nec enim. Suspendisse nec ligula nec augue tristique semper sed suscipit erat. Integer et nunc a augue pellentesque fringilla. Nullam leo ligula, mattis id pretium ac, suscipit sed nunc. Duis ac lorem nec velit malesuada tempus hendrerit ut metus. Quisque a lacus vel lectus rhoncus luctus. Aliquam ornare, nunc sit amet porttitor ornare, libero lectus congue enim, vitae tincidunt sapien justo et ligula. Proin vestibulum blandit fringilla. </p>
+      </div>
+   
+    <h1 style="text-align:center">Fast: wheelSpeed:100</h1>
+    <div id="FastWheelSpeed" class="contentHolder">
+      <div class="content">
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta aliquet gravida. Aenean pulvinar blandit orci vel fermentum. Phasellus viverra pulvinar viverra. Quisque et sagittis ante. Nulla sem neque, fermentum at laoreet vel, rhoncus sit amet nisl. Donec consectetur urna ac massa placerat ac pharetra sem mollis. Integer nibh urna, placerat vel placerat in, tempor at nisi. Aenean rutrum, enim sit amet rutrum fermentum, magna justo volutpat massa, lacinia adipiscing nisl magna eget nibh. In auctor, nibh eget faucibus tristique, arcu turpis molestie orci, placerat suscipit diam nibh et erat. Curabitur tempus lectus quis odio ornare porta.</p>
+  <p>Aenean odio libero, eleifend eu luctus quis, accumsan ac risus. Mauris egestas bibendum tortor vel semper. Ut egestas, erat ut rutrum tempus, massa erat commodo arcu, id congue justo odio ac erat. Quisque non purus et nunc consequat scelerisque. Vestibulum vitae tristique dolor. Suspendisse ac quam interdum libero euismod tempus. Sed a ante justo, varius commodo urna.</p>
+  <p>Ut ante felis, malesuada eu eleifend convallis, tempor eget tellus. Vestibulum rhoncus elementum dui a sagittis. Praesent eu nunc vitae massa cursus luctus ac eget massa. Etiam sagittis nibh nisi, vel sagittis felis. Aliquam vulputate mauris id nunc pellentesque at fermentum lacus dapibus. Donec pretium consectetur magna sit amet egestas. Ut dignissim adipiscing purus sit amet lobortis.</p>
+  <p>Curabitur ullamcorper, nisi quis convallis luctus, nunc nisi mollis felis, eu mattis nunc sapien sed sapien. Vestibulum in nisi mauris, mattis sagittis lacus. Pellentesque in sem augue, a blandit augue. Aliquam bibendum diam ac erat imperdiet vestibulum. Vivamus dignissim, quam in feugiat scelerisque, enim risus interdum turpis, in vehicula ante lorem eu erat. Mauris ac turpis luctus libero pulvinar ultricies. Praesent porttitor nulla non risus porta consequat. Nunc vulputate porta nulla non ultrices. Donec et magna eu nisl elementum scelerisque. Curabitur in vehicula dui.</p>
+  <p>Suspendisse eu nibh in libero euismod condimentum eget nec enim. Suspendisse nec ligula nec augue tristique semper sed suscipit erat. Integer et nunc a augue pellentesque fringilla. Nullam leo ligula, mattis id pretium ac, suscipit sed nunc. Duis ac lorem nec velit malesuada tempus hendrerit ut metus. Quisque a lacus vel lectus rhoncus luctus. Aliquam ornare, nunc sit amet porttitor ornare, libero lectus congue enim, vitae tincidunt sapien justo et ligula. Proin vestibulum blandit fringilla. </p>
+      </div>
     </div>
-    
+    <h1 style="text-align:center">Slow: wheelSpeed:1</h1>
+    <div id="SlowWheelSpeed" class="contentHolder">
+      <div class="content">
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta aliquet gravida. Aenean pulvinar blandit orci vel fermentum. Phasellus viverra pulvinar viverra. Quisque et sagittis ante. Nulla sem neque, fermentum at laoreet vel, rhoncus sit amet nisl. Donec consectetur urna ac massa placerat ac pharetra sem mollis. Integer nibh urna, placerat vel placerat in, tempor at nisi. Aenean rutrum, enim sit amet rutrum fermentum, magna justo volutpat massa, lacinia adipiscing nisl magna eget nibh. In auctor, nibh eget faucibus tristique, arcu turpis molestie orci, placerat suscipit diam nibh et erat. Curabitur tempus lectus quis odio ornare porta.</p>
+  <p>Aenean odio libero, eleifend eu luctus quis, accumsan ac risus. Mauris egestas bibendum tortor vel semper. Ut egestas, erat ut rutrum tempus, massa erat commodo arcu, id congue justo odio ac erat. Quisque non purus et nunc consequat scelerisque. Vestibulum vitae tristique dolor. Suspendisse ac quam interdum libero euismod tempus. Sed a ante justo, varius commodo urna.</p>
+  <p>Ut ante felis, malesuada eu eleifend convallis, tempor eget tellus. Vestibulum rhoncus elementum dui a sagittis. Praesent eu nunc vitae massa cursus luctus ac eget massa. Etiam sagittis nibh nisi, vel sagittis felis. Aliquam vulputate mauris id nunc pellentesque at fermentum lacus dapibus. Donec pretium consectetur magna sit amet egestas. Ut dignissim adipiscing purus sit amet lobortis.</p>
+  <p>Curabitur ullamcorper, nisi quis convallis luctus, nunc nisi mollis felis, eu mattis nunc sapien sed sapien. Vestibulum in nisi mauris, mattis sagittis lacus. Pellentesque in sem augue, a blandit augue. Aliquam bibendum diam ac erat imperdiet vestibulum. Vivamus dignissim, quam in feugiat scelerisque, enim risus interdum turpis, in vehicula ante lorem eu erat. Mauris ac turpis luctus libero pulvinar ultricies. Praesent porttitor nulla non risus porta consequat. Nunc vulputate porta nulla non ultrices. Donec et magna eu nisl elementum scelerisque. Curabitur in vehicula dui.</p>
+  <p>Suspendisse eu nibh in libero euismod condimentum eget nec enim. Suspendisse nec ligula nec augue tristique semper sed suscipit erat. Integer et nunc a augue pellentesque fringilla. Nullam leo ligula, mattis id pretium ac, suscipit sed nunc. Duis ac lorem nec velit malesuada tempus hendrerit ut metus. Quisque a lacus vel lectus rhoncus luctus. Aliquam ornare, nunc sit amet porttitor ornare, libero lectus congue enim, vitae tincidunt sapien justo et ligula. Proin vestibulum blandit fringilla. </p>
+      </div>
+    </div>
  
 <!-- FOOTER -->
-    <footer>
-      <div class="col-md-12 footer-box">
-      <p> Designed by 
-        <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
-        <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.</p>
-      </div>
-    </footer>
+      <footer>
+        <div class="container footer-box">
+        <p> Designed by 
+          <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
+          <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.</p>
+        </div>
+      </footer>
+    </div>
  <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/bootstrap/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-affix.js"></script>
+
+    <script src="assets/bootstrap/js/holder.js"></script>
+    <script src="assets/bootstrap/js/prettify.js"></script>
+
+    <script src="assets/bootstrap/js/application.js"></script>
 
     
     <!-- addons js -->
@@ -310,43 +369,53 @@
               backdrop: true,
           },
           {
-              element: "#backstretch", 
+              element: "#backstretch h1", 
               title: "BACKSTRETCH", 
               content: "Second js plugin added.",
-              orphan: true,
-              placement: "right",
+              placement: "left",
+              reflex: true
           },
           {
               element: "#font-awesome h1",
               title: "FONT AWESOME",
               content: "Third js plugin added.",
               orphan: true,
-              placement: "right"
+              placement: "left"
           },
                     {
-             element: "#maxlength h1",
+             element: "#maxlenght h1",
               title: "MAXLENGHT",
               content: "Fourth js plugin added.",
               orphan: true,
-              placement: "right",
+              placement: "left",
           },
           {
              element: "#select2 h1",
               title: "SELECT2",
               content: "Fifth js plugin added.",
               orphan: true,
-              placement: "right",
-          },
-          {
-             element: "#autosize h1",
-              title: "AUTOSIZE",
-              content: "Sixth js plugin added.",
-              orphan: true,
-              placement: "right",
+              placement: "left",
           }
       ]);
       tour.restart();
     </script> 
+
+
+<!-- Backstretch -->
+    <script src="assets/addons/backstretch/js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+
+      $(".backstretch-example").backstretch("assets/addons/backstretch/img/backstretch-example1.jpg");
+
+
+      $(".backstretch-example-2").backstretch([
+        "assets/addons/backstretch/img/backstretch-example2.jpg",
+        "assets/addons/backstretch/img/backstretch-example3.jpg"
+        ], {
+          fade: 750,
+          duration: 4000
+      });
+    </script>
 
 
 
@@ -376,6 +445,7 @@
 
 
 <!-- autosize -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
     <script src='assets/addons/autosize/js/jquery.autosize.js'></script>
     <script>
       $(function(){
@@ -384,21 +454,7 @@
       });
     </script>
 
-<!-- Backstretch -->
-    <script src="assets/addons/backstretch/js/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
 
-      $(".backstretch-example").backstretch("assets/addons/backstretch/img/backstretch-example1.jpg");
-
-
-      $(".backstretch-example-2").backstretch([
-        "assets/addons/backstretch/img/backstretch-example2.jpg",
-        "assets/addons/backstretch/img/backstretch-example3.jpg"
-        ], {
-          fade: 750,
-          duration: 4000
-      });
-    </script>
 <!-- Maxlength -->
     <script src="assets/addons/maxlength/js/bootstrap-maxlength.js"></script>
     <script>
@@ -433,7 +489,17 @@
           alwaysShow: true,
           placement: 'top-left'
         });
+
+        hljs.initHighlightingOnLoad();
+
        });
     </script>
+    
+    <!-- autosize -->
+
+      <script src="assets/addons/tinyscrollbar/js/jquery.mousewheel.js"></script>
+      <script src="assets/addons/tinyscrollbar/js/perfect-scrollbar.js"></script>
+      
+
   </body>
 </html>

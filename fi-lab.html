@@ -5,18 +5,19 @@
     <title>FI-WARE web style · Wordpress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FI-WARE web style">
-    <meta name="author" content="@crispinh2o DIT UPM and Ogilvy">
+    <meta name="author" content="DIT UPM and Ogilvy">
 
     <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
+
+    <!-- Bootstrap rewrite -->
     <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
+
     <!-- FI-WARE styles -->
+    <link href="assets/FI-WARE/css/docs.css" rel="stylesheet">
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
 
     <!-- addons styles -->
     <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -33,51 +34,47 @@
   <head>
   <body class="wordpress" data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
     <div id="wrap">
-<!-- NAVBAR
+      <!-- NAVBAR
       ================================================== -->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <i class="fa fa-angle-double-down"></i>
-          </a>
-          <div class="logo-header in">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="menu-down btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <i class="fa fa-angle-double-down"></i>
+            </a>
+            <div class="logo-header">
               <a href="index.html" class="logo">
-                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
+                <img alt="FI-WARE" class="logo" src="assets/FI-WARE/img/logos/header-logo.png">
               </a>
               <a href="index.html" class="brand">
                 <span>FI-</span>WARE
               </a>    
             </div>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bootstrap <i class="fa fa-angle-double-down"></i></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li><a tabindex="-1" href="get-started.html">Get Started</a></li>
+                    <li><a tabindex="-1" href="css.html">Css</a></li>
+                    <li><a tabindex="-1" href="components.html">Components</a></li>
+                    <li><a tabindex="-1" href="javascript.html">Javascript</a></li>
+                  </ul>
+                </li>
+                <li><a href="identity-guide.html">Identity</a></li>
+                <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
+                    <li class="active"><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
+                  </ul>
+                </li>
+                <li><a href="addons.html">Addons</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap  <i class="fa fa-angle-double-down"></i></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="get-started.html">Get Started</a></li>
-                <li><a href="css.html">Css</a></li>
-                <li><a href="components.html">Components</a></li>
-                <li><a href="javascript.html">Javascript</a></li>
-              </ul>
-            </li>
-            <li><a href="identity-guide.html">Identity</a></li>
-            <li class="dropdown active">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
-                <li class="active"><a tabindex="-1" href="#">FI-LAB</a></li>
-              </ul>
-            </li>
-            <li><a href="addons.html">Addons</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
-
-
+      </div>
 
     <!-- Subhead
       ================================================== -->
@@ -92,275 +89,291 @@
 
         <!-- Docs nav
         ================================================== -->
-        <div class="row row-principal">
-          <div class="col-md-9">
+        <div class="row">
+          <div class="span3 bs-docs-sidebar">
+            <ul class="nav nav-list bs-docs-sidenav affix-top">
+              <li><a href="#template-wp"><i class="fa fa-chevron-right"></i> Template</a></li>
+              <li><a href="#css-wp"><i class="fa fa-chevron-right"></i> Css</a></li>
+              <li><a href="#install-wp"><i class="fa fa-chevron-right"></i> Install</a></li>
+              <li><a href="#posts-wp"><i class="fa fa-chevron-right"></i> Posts</a></li>
+              <li><a href="#twitter-wp"><i class="fa fa-chevron-right"></i> Twitter timeline</a></li>
+              <li><a href="#examples-wp"><i class="fa fa-chevron-right"></i> Examples</a></li>
+            </ul>
+          </div>
+          <div class="span9">
             <!-- File structure
             ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="template-wp" class="page-header">
-                Template
-              </h1>
+            <section id="template-wp">
+              <div class="page-header">
+                <h1>Template</h1>
+              </div>
               <h2>Structure</h2>
               <p class="lead">You'll find the following file structure and contents.</p>
-<div class="highlight"><pre><code class="bash">
-wordpress-bootstrap/
-  ├── admin/
-  │
-  ├── css/
-  │   ├── bootstrap-rewrite.css
-  │   ├── font-awesome.min.css
-  │   ├── fiware.css
-  │   ├── sticky-footer-navbar.css
-  │   └── fonts/
-  │     ├── font-awesome-webfont formats
-  │     └── fonts.css 
-  │   
-  ├── images/
-  │   ├── favicon.ico
-  │   ├── header-logo.svg
-  │   └── jquery.min.js
-  │
-  ├── library/
-  │   ├── css/
-  │   ├── images/
-  │   ├── js/
-  │   └── less/
-  │
-  ├── php pages/
-  │
-  └── style.css/
-</code></pre></div>
+<pre class="prettyprint"><span class="pln">  wordpress-bootstrap</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">├──</span><span class="pln"> admin</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">├──</span><span class="pln"> css</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> bootstrap-rewrite</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> new_rules</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">└──</span><span class="pln"> icon_and_fonts</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> fonts</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      ├──</span><span class="pln"> fonts<span class="pun">.</span><span class="pln"><span class="pln">css 
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> format fonts<span class="pun">.</span><span class="pln"><span class="pln">ttf, woff, svg  
+  </span><span class="pun">├──</span><span class="pln"> images</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> favicon</span><span class="pun">.</span><span class="pln">ico
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> header-logo</span><span class="pun">.</span><span class="pln">png 
+
+
+  </span><span class="pun">└──</span><span class="pln"> library</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">├──</span><span class="pln"> css</span><span class="pun">/</span>
+  </span><span class="pun">├──</span><span class="pln"> images</span><span class="pun">/</span>
+  </span><span class="pun">├──</span><span class="pln"> img</span><span class="pun">/</span>
+  </span><span class="pun">├──</span><span class="pln"> js</span><span class="pun">/</span>
+  </span><span class="pun">└──</span><span class="pln"> less</span><span class="pun">/</span>
+  </span><span class="pun">└──</span><span class="pln"> Php pages</span><span class="pun">...</span><span class="pln">
+  </span><span class="pun">└──</span><span class="pln"> style</span><span class="pun">.</span><span class="pln"><span class="pln">css 
+</pre>
                <p>Download the FI-WARE wordpress template <a class="btn disabled" href="#">wordpress-bootstrap</a>.</p>
-            </div><!-- /.structure -->
+            </section>
 
 
             <!-- Css
             ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="css-wp" class="page-header">
-                Css
-              </h1>
-              <p class="lead">To include new css rules we will include a new file format css and call this file in head´s lines. For better scalability in future updates, do not write in fiware.css</p>
-              <div class="level-two">
-                <h3><div class="fi-band"></div>Rewrite</h3>
-                <p>FI-WARE style guide's overrides Wordpress Bootstrap and include new addons. You need download the Wordpress template and included inside:</p>
-
-<div class="highlight"><pre><code class="bash">
-wordpress-bootstrap/
-  ├── admin/
-  │
-  └── css/
-     ├── bootstrap-rewrite.css
-     ├── font-awesome.min.css
-     ├── fiware.css
-     ├── sticky-footer-navbar.css
-     └── fonts/
-       ├── font-awesome-webfont formats
-       └── fonts.css 
-</code></pre></div> 
+            <section id="css-wp">
+              <div class="page-header">
+                <h1>Css</h1>
               </div>
-            </div><!-- /.css -->
+              <div class="level-one">
+                <h2>Customize</h2>
+                <p class="lead">FI-WARE style guide's overrides Wordpress Bootstrap and include new addons.</p>
+                You need download and included in:
+<pre class="prettyprint"><span class="pln">  wordpress-bootstrap</span><span class="pun">/</span><span class="pln">
+</span><span class="pun">├──</span><span class="pln"> css</span><span class="pun">/</span><span class="pln">
+</span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> bootstrap-rewrite</span><span class="pun">.</span><span class="pln">css   
+<span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> new-rules</span><span class="pun">.</span><span class="pln">css
+</span><span class="pun">│</span><span class="pln">   </span><span class="pun">├──</span><span class="pln"> icon_and_fonts</span>
+</span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> fonts</span>
+</span><span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> fonts<span class="pun">.</span><span class="pln"><span class="pln">css 
+</pre>
+                Donwload: <a  class="btn disabled" href="#">bootstrap-rewrite.css</a> and <a  class="btn disabled" href="#">new-rules.css</a>
+              </div>
+            </section>
 
 
           <!-- Install
             ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="install-wp" class="page-header">
-                Install
-              </h1>
-              <h2>Install FI-WARE theme.</h2>
-              <p>Before you can upload a FI-WARE theme, Next you must upload the .ZIP file you just downloaded to your website via the WordPress Dashboard. Log in to wp-admin and click the Appearances > Themes tab. Next click the "Install Themes" button and then click the "Upload" link. Click "Choose File" and locate the .ZIP file you just downloaded and click "Install Now."</p>
-              <div class="bs-callout bs-callout-warning">
-                <h4>Installation on a local server</h4>
+            <section id="install-wp">
+              <div class="page-header">
+                <h1>Install</h1>
+              </div>
+              <div class="level-one">
+                <div class="fi-band"></div><h3>1. First step to install FI-WARE theme.</h3>
+                <p>Before you can upload a FI-WARE theme, Next you must upload the .ZIP file you just downloaded to your website via the WordPress Dashboard. Log in to wp-admin and click the Appearances > Themes tab. Next click the "Install Themes" button and then click the "Upload" link. Click "Choose File" and locate the .ZIP file you just downloaded and click "Install Now."</p>
+              </div>
+              <div class="level-one">
+                <div class="fi-band"></div><h3>2. Installation on a local server.</h3>
                 <p>If you are an avanced developer you´ll like install WP on a local server for a powerfull control.<a href="http://codex.wordpress.org/Installing_WordPress">Wordpress souport.</a></p>
               </div>
-
-            </div><!-- /.install -->
+            </section>
 
 
           <!-- Posts
             ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="posts-wp" class="page-header">
-                Posts
-              </h1>
-              <p class="lead">Rules for a visual unity.</p>
-              <div class="bs-callout bs-callout-warning">
-                <h4>Web font in Firefox</h4>
-                <p>For a correct visualization we will need to make in head´s lines: <code>< link ></code> <code>rel="stylesheet"</code> <code>type="text/css"</code> <code>href="http://</code><code>"site"/wp-content/themes/wordpress-bootstrap</code> <code>.../fonts.css"</code>
-                <a href="http://wordpress.org/support/topic/font-face-not-working-in-firefox-live-but-working-locally">Wordpress souport.</a></p>
+            <section id="posts-wp">
+              <div class="page-header">
+                <h1>Posts</h1>
               </div>
-              <div class="level-two">
-                <h3><div class="fi-band"></div>Lead</h3>
-                <p class="lead">FI-WARE style guide's is immersed in sub-world in this tutorial. Keep calm!</p>
+              <div class="level-one">
+                <h2>Rules for a visual unity.</h2>
+                <div class="level-two">
+                  <div class="fi-band"></div><h3>Lead</h3>
+                  <p class="lead">FI-WARE style guide's is immersed in sub-world in this tutorial. Keep calm!</p>
+                </div>
+                <div class="level-two">
+                  <div class="fi-band"></div><h3>Read more</h3>
+                  <p class="lead">FI-WARE style guide's is immersed in sub-world in this tutorial. Keep calm!</p>
+                </div>
               </div>
-              <div class="level-two">
-                <h3><div class="fi-band"></div>Read more</h3>
-                <p class="lead">FI-WARE style guide's is immersed in sub-world in this tutorial. Keep calm!</p>
-              </div>
-            </div><!-- /.posts -->
+            </section>
             
 
           <!-- Twitter timeline
             ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="twitter-wp" class="page-header">
-                Twitter timeline
-              </h1>
+            <section id="twitter-wp">
+              <div class="page-header">
+                <h1>Twitter timeline</h1>
+              </div>
               <h3>You need generate a code from Twitter account.</h3>
               <p class="lead">How to make it? <a href="http://en.support.wordpress.com/widgets/twitter-timeline-widget/">wordpress support</a></p>
-              <div class="bs-example" style="min-height: 390px">
-                <div class="twitter col-md-3">
+              <div class="bs-docs-example">
+                <div class="twitter span3">
                   <a class="twitter-timeline" data-tweet-limit="2" href="https://twitter.com/FIware" data-widget-id="378538709693382657">Tweets by @FIware</a>
                   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
                   </script>
                 </div>
               </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;a </span><span class="na">class=</span><span class="s">"twitter-timeline"</span> <span class="na">data-tweet-limit=</span><span class="s">"2"</span> <span class="na">href=</span><span class="s">"https://twitter.com/FIware"</span> <span class="na">data-data-widget-id=</span><span class="s">"378538709693382657"</span><span class="nt">&gt;</span>
-  Tweets by @FIware 
-<span class="nt">&lt;a</span><span class="nt">&gt;</span>
-<span class="nt">&lt;script&gt;</span> 
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-<span class="nt">&lt;/script&gt;</span> 
-</code></pre></div>    
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"twitter"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln"><span class="pln">  </span></span><span class="tag"><span class="tag">&lt;a</span></span><span class="pln"><span class="pln"> </span></span><span class="atn"><span class="atn">class</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"twitter-timeline"</span></span><span class="pln"><span class="pln"> </span></span><span class="atn"><span class="atn">data-tweet-limit</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"2"</span></span><span class="pln"><span class="pln"> </span></span><span class="atn"><span class="atn">href</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"https://twitter.com/FIware"</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"2"</span></span><span class="pln"><span class="pln"> </span></span><span class="atn"><span class="atn">data-widget-id</span></span><span class="pun"><span class="pun">=</span></span><span class="atv"><span class="atv">"378538709693382657"</span></span><span class="tag"><span class="tag">&gt;</span></span>Tweets by @FIware</li><li class="L2"><span class="tag"><span class="tag">&lt;/a&gt;</span></span></li><li class="L3"><span class="pln"></span><span class="tag">&lt;script&gt;</span><span class="pln"></span></li><li class="L3"><span class="atn">  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs")</li><li class="L4"><span class="tag"><span class="tag">&lt;/script&gt;</span></span></li></pre>    
               <p><span class="label label-info">Heads up!</span> Any wordpress widget of Twitter time line is more slow.  This is a better solution at the moment.</p>
-            </div><!-- /.twiter-timeline -->
+            </section>
 
 
 
           <!-- Examples
             ================================================== -->
-            <div class="bs-docs-section">
-              <h1 id="examples-wp" class="page-header">
-                Examples
-                <small>
-                  <a href="http://lab.fi-ware.eu/"> >>>>> Go to this site</a>
-                </small>
-              </h1>
+            <section id="examples-wp">
+              <div class="page-header">
+                <h1>Examples<small><a href="http://lab.fi-ware.eu/"> >>>>> Go to this site</smalll></a><h1>
+                </div>
 
-              <ul class="thumbnails">   
-                <li class="col-md-6 col-sm-6 col-xs-12">   
-                  <div class="thumbnail">
-                    <h5 class="ellipsis">Index of FI-LAB</h5>
-                    <small>@crispinh2o</small>
-                    <div class="wp-example3">
-                      <div class="backstretch">
-                      </div>
-                    </div>
-
-                    <div class="caption">
-                      <p>We have created here a Youtube video galery with Jquery.js</p>
-                      <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-Lab.jpg" download="index_FI-Lab.jpg" class="btn btn-primary">download</a> <a href="#example-3" data-toggle="modal" class="btn">See</a></p>
-                    </div>
-                  </div>
-                </li>
-
-
-                <!-- Modal 1-->
-                <div id="example-3" class="wp-image modal bs-example-modal-lg fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h3 class="modal-title" id="myModalLabel">Index of FI-LAB</h3>
-                        <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-WARE.jpg" download="index_FI-WARE.jpg">download image</a></h6>
-                      </div>
-                      
-                      <div class="modal-body">
-                        <div class="wp-example3">
-                          <p class="alert alert-danger fade in"> please resize your browser.  We work´s it!!<button type="button" class="close" data-dismiss="alert">×</button></p>
-                          <div class="backstretch">
+                <ul class="thumbnails">   
+                  <li class="span3">   
+                    <div class="thumbnail">
+                      <h5 class="ellipsis">Index of FI-LAB</h5>
+                      <small>@crispinh2o</small>
+                      <div class="wp-example1">
+                        <div class="backstretch">
                         </div>
                       </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
-                </div>
-                </div>
-       
+
+                      <div class="caption">
+                        <p>We have created here a Youtube video galery with Jquery.js</p>
+                        <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg" download="index_FI-LAB.jpg" class="btn btn-primary">download</a> <a href="#example-1" data-toggle="modal" class="btn">See</a></p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Modal 1-->
+                  <div id="example-1" class="wp-image modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                      <h3 id="myModalLabel">Index of FI-LAB</h3>
+                      <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg" download="index_FI-LAB.jpg">download image</a></h6>
+                    </div>
+                    <div class="modal-body">
+                      <div class="wp-example1">
+                        <p class="alert"> please resize your browser.  We work´s it!!<button type="button" class="close" data-dismiss="alert">×</button></p>
+                        <div class="backstretch">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
 
-                <li class="col-md-6 col-sm-6 col-xs-12">
-                  <div class="thumbnail">
-                    <h5 class="ellipsis">Comments by Admin of FI-LAB</h5>
-                    <small>@crispinh2o</small>
+                  <li class="span3">
+                    <div class="thumbnail">
+                      <h5 class="ellipsis">Comments by Admin of FI-LAB</h5>
+                      <small>@crispinh2o</small>
+                      <div class="wp-example2">
+                        <div class="backstretch">
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <p>Clean and simple</p>
+                        <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg" download="by-admin.jpg" class="btn btn-primary">download</a> <a href="#example-2" data-toggle="modal" class="btn">See</a></p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Modal 2-->
+                  <div id="example-2" class="wp-image modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                      <h3  class="ellipsis" id="myModalLabel">Comments by Admin of FI-LAB</h3>
+                      <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg" download="by-admin.jpg">download image</a></h6>
+                    </div>
+                    <div class="modal-body">
+                      <div class="wp-example2">
+                        <p class="alert"> please resize your browser.  We work´s it!!<button type="button" class="close" data-dismiss="alert">×</button></p>
+                        <div class="backstretch">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <li class="span3">
+                    <div class="thumbnail">
+                      <h5 class="ellipsis">Post with comment of FI-LAB</h5>
+                      <small>@crispinh2o</small>
+                      <div class="wp-example3">
+                        <div class="backstretch">
+                        </div>
+                      </div>
+                      <div class="caption">
+
+                        <p>with especial highlight comment</p>
+                        <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_comment.jpg" download="post_and_comment.jpg" class="btn btn-primary">download</a> <a href="#example-3" data-toggle="modal" class="btn">See</a></p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Modal 4-->
+                <div id="example-4" class="wp-image modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Post with re-comment of FI-LAB</h3>
+                    <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_comment.jpg" download="post_and_comment.jpg">download image</a>
+                    </h6>
+                  </div>
+                  <div class="modal-body">
                     <div class="wp-example4">
+                      <p class="alert"> please resize your browser.  We work´s it!!<button type="button" class="close" data-dismiss="alert">×</button></p>
                       <div class="backstretch">
                       </div>
                     </div>
-                    <div class="caption">
-                      <p>Clean and simple</p>
-                      <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg" download="by-admin.jpg" class="btn btn-primary">download</a> <a href="#example-4" data-toggle="modal" class="btn">See</a></p>
-                    </div>
                   </div>
-                </li>
-
-                <!-- Modal 2-->
-                <div id="example-4" class="wp-image bs-example-modal-lg modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h3 class="modal-title" id="myModalLabel">Comments by Admin of FI-LAB</h3>
-                        <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin_FI-WARE.jpg" download="by-admin_FI-WARE.jpg">download image</a></h6>
-                      </div>
-                      
-                      <div class="modal-body">
-                        <div class="wp-example4">
-                          <p class="alert alert-danger fade in"> please resize your browser.  We work´s it!!<button type="button" class="close" data-dismiss="alert">×</button></p>
-                          <div class="backstretch">
-                        </div>
-                      </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
                 </div>
-              </ul>
-            </div><!-- /.examples-->
-          </div>
-     
-          <div class="col-md-3">
-            <div class="bs-docs-sidebar hidden-print affix" role="complementary" data-spy="affix" data-offset-top="96" data-offset-bottom="0">
-              <ul class="nav bs-docs-sidenav">
-                <li><a href="#template-wp">Template</a></li>
-                <li><a href="#css-wp">Css</a></li>
-                <li><a href="#install-wp">Install</a></li>
-                <li><a href="#posts-wp">Posts</a></li>
-                <li><a href="#twitter-wp">Twitter timeline</a></li>
-                <li><a href="#examples-wp">Examples</a></li>
-              </ul>
+              </section>
             </div>
           </div>
         </div>
-      </div>
-    </div><!--/.wrap -->
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="col-md-12 footer-box">
-        <p> Designed by 
-          <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
-          <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.
-        </p>
-      </div>
-    </footer>
-      
+        <!-- FOOTER -->
+        <footer>
+          <div class="span12 footer-box">
+            <p> Designed by 
+              <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
+              <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.
+            </p>
+          </div>
+        </footer>
+      </div><!--/.wrap -->
 
 
       <!-- Le javascript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
-      <script src="assets/bootstrap/js/jquery.min.js"></script>
-      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <script src="assets/bootstrap/js/jquery.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-transition.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-alert.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-modal.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-dropdown.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-tab.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-tooltip.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-popover.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-button.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-collapse.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-carousel.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-typeahead.js"></script>
+      <script src="assets/bootstrap/js/bootstrap-affix.js"></script>
 
+      <script src="assets/bootstrap/js/holder.js"></script>
+      <script src="assets/bootstrap/js/prettify.js"></script>
+
+      <script src="assets/bootstrap/js/application.js"></script>
 
 <!-- Backstretch -->
       <script src="assets/addons/backstretch/js/jquery.backstretch.min.js"></script>
       <script>
-        $(".wp-example3").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg");
-        $(".wp-example4").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg");
+        $(".wp-example1").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg");
+        $(".wp-example2").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg");
+        $(".wp-example3").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_comment.jpg");
+        $(".wp-example4").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/post_and_re-comment.jpg");
       </script>
 
 <!-- Scroll up -->
-  
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
 
