@@ -8,20 +8,22 @@
     <meta name="author" content="DIT UPM and Ogilvy">
 
     <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
+
+    <!-- Bootstrap rewrite -->
     <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
+
     <!-- FI-WARE styles -->
+    <link href="assets/FI-WARE/css/docs.css" rel="stylesheet">
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
 
     <!-- addons styles -->
 
     <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/addons/animate/css/animate.min.css" rel="stylesheet">
+
 
 
     <!-- Fav and touch icons -->
@@ -41,56 +43,55 @@
 
       <header class="jumbotron subhead super-title" id="index">
         <div class="content">
+          <div class="lazo"></div>
           <div class="logo-header">
-            <a href="#" class="logo">
+            <a href="http://lab.fi-ware.eu/" class="logo">
               <img alt="FI-WARE" class="logo" src="assets/FI-WARE/img/logos/logo-white.png">
             </a>
-            <a href="#" class="brand">
+            <a href="index.html" class="brand">
               <span>FI-</span>WARE
               <h6 class="color-bluedark-tx"><span>OPEN APIs FOR OPEN MINDS</span></h6>
             </a>    
           </div>
         </div>
       </header>
-      
+
       <!-- NAVBAR
       ================================================== -->
-
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <header class="navbar navbar-fixed">
+        <div class="navbar-inner">
+          <div class="container">
+            <h5 class="sg">Style guide</h5>
+            <a class="menu-down btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <i class="fa fa-angle-double-down"></i>
             </a>
-            <h5 class="sg">Style guide</h5>
-          </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap  <i class="fa fa-angle-double-down"></i></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="get-started.html">Get Started</a></li>
-                  <li><a href="css.html">Css</a></li>
-                  <li><a href="components.html">Components</a></li>
-                  <li><a href="javascript.html">Javascript</a></li>
-                </ul>
-              </li>
-              <li><a href="identity-guide.html">Identity</a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                  <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
-                  <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
-                </ul>
-              </li>
-              <li><a href="addons.html">Addons</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bootstrap  <i class="fa fa-angle-double-down"></i></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li><a tabindex="-1" href="get-started.html">Get Started</a></li>
+                    <li><a tabindex="-1" href="css.html">Css</a></li>
+                    <li><a tabindex="-1" href="components.html">Components</a></li>
+                    <li><a tabindex="-1" href="javascript.html">Javascript</a></li>
+                  </ul>
+                </li>
+                <li><a href="identity-guide.html">Identity</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                    <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
+                    <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
+                  </ul>
+                </li>
+                <li><a href="addons.html">Addons</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+
+          </div>
         </div>
-      </nav>
+      </header><!--/.navbar -->
 
 
 
@@ -103,20 +104,21 @@
       <div class="container marketing">
         <p class="handwrite1">Designed for everyone, everywhere. </p>
         <p class="handwrite2">Need reasons to love <span><span class="low">FI-</span>WARE</span> Style? Look!! </p>
-        <hr>
+        <hr class="soften">
+
         <!-- Three columns of text below the carousel -->
         <div class="row characteristic">
-          <div class="col-md-4">
+          <div class="span4">
             <i class="fa fa-desktop fa-4x"></i>
             <p>The HTML5 test score is an indication of how well your browser supports the upcoming HTML5 standard and related specifications. Even though the specification isn't finalized yet.</p>
           </div><!-- /.span4 -->
 
-          <div class="col-md-4">
+          <div class="span4">
             <i class="fa fa-eye fa-4x"></i>
             <p>With Fi-ware web style, we've gone fully responsive. Our components are scaled according to a range of resolutions and devices to provide a consistent experience, no matter what.</p>
           </div><!-- /.span4 -->
 
-          <div class="col-md-4">
+          <div class="span4">
             <i class="fa fa-thumbs-o-up fa-4x"></i>
             <p>CSS3 facilitates publication of content in multiple presentation formats based on nominal parameters. Include explicit user preferences, different web browsers, the geographic locations...</p>
           </div><!-- /.span4 -->
@@ -128,10 +130,10 @@
     </div><!--/.wrap -->
     <!-- FOOTER -->
       <footer>
-        <div class="col-md-12 footer-box">
+        <div class="span12 footer-box">
           <p> Designed by 
             <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
-            <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version.
+            <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.
           </p>
         </div>
       </footer>
@@ -140,8 +142,26 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/bootstrap/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-affix.js"></script>
+
+    <script src="assets/bootstrap/js/holder.js"></script>
+    <script src="assets/bootstrap/js/prettify.js"></script>
+
+    <script src="assets/bootstrap/js/application.js"></script>
 
 <!-- Scroll up -->
     <script type="text/javascript" src="assets/addons/scroll-up/js/jquery-1.10.2.min.js"></script>

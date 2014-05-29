@@ -8,15 +8,16 @@
     <meta name="author" content="DIT UPM and Ogilvy">
 
     <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
+
+    <!-- Bootstrap rewrite -->
     <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
+
     <!-- FI-WARE styles -->
+    <link href="assets/FI-WARE/css/docs.css" rel="stylesheet">
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
 
     <!-- addons styles -->
     <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -35,50 +36,47 @@
 
 
 
- <!-- NAVBAR
-      ================================================== -->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="menu-down btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <i class="fa fa-angle-double-down"></i>
           </a>
-          <div class="logo-header in">
-              <a href="index.html" class="logo">
-                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
-              </a>
-              <a href="index.html" class="brand">
-                <span>FI-</span>WARE
-              </a>    
-            </div>
+          <div class="logo-header">
+            <a href="index.html" class="logo">
+              <img alt="FI-WARE" class="logo" src="assets/FI-WARE/img/logos/header-logo.png">
+            </a>
+            <a href="index.html" class="brand">
+              <span>FI-</span>WARE
+            </a>    
+          </div>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bootstrap <i class="fa fa-angle-double-down"></i></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li><a tabindex="-1" href="get-started.html">Get Started</a></li>
+                  <li><a tabindex="-1" href="css.html">Css</a></li>
+                  <li><a tabindex="-1" href="components.html">Components</a></li>
+                  <li><a tabindex="-1" href="javascript.html">Javascript</a></li>
+                </ul>
+              </li>
+              <li class="active"><a href="#">Identity</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
+                  <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
+                </ul>
+              </li>
+              <li><a href="addons.html">Addons</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap  <i class="fa fa-angle-double-down"></i></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="get-started.html">Get Started</a></li>
-                <li><a href="css.html">Css</a></li>
-                <li><a href="components.html">Components</a></li>
-                <li><a href="javascript.html">Javascript</a></li>
-              </ul>
-            </li>
-            <li class="active"><a href="#">Identity</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
-                <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
-              </ul>
-            </li>
-            <li><a href="addons.html">Addons</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
-
+      </div>
+    </div>
 
 <!-- Subhead
 ================================================== -->
@@ -93,30 +91,42 @@
   <div class="container">
       <!-- Docs nav
     ================================================== -->
-    <div class="row row-principal">
-      <div class="col-md-9">
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix-top">
+          <li><a href="#fi-brand"><i class="fa fa-chevron-right"></i>Brand</a></li>
+          <li><a href="#typo"><i class="fa fa-chevron-right"></i> Typography</a></li>
+          <li><a href="#color"><i class="fa fa-chevron-right"></i> Color</a></li>
+          <li><a href="#patterns"><i class="fa fa-chevron-right"></i> Patterns</a></li>
+          <li><a href="#banners"><i class="fa fa-chevron-right"></i> Banners</a></li>
+          <li><a href="#mails-notifications"><i class="fa fa-chevron-right"></i> Mails notifications</a></li>
+          <li><a href="#error-pages"><i class="fa fa-chevron-right"></i> Error Pages</a></li>
+          <li><a href="#references"><i class="fa fa-chevron-right"></i> References</a></li>
+        </ul>
+      </div>
+      <div class="span9">
 
  <!-- Brand
         ================================================== -->
-        <div class="bs-docs-section">
-          <h1 id="fi-brand" class="page-header">
-            Brand
-          </h1>
+        <section id="fi-brand">
+          <div class="page-header">
+            <h1>Brand</h1>
+          </div>
           <p class="lead">FI-WARE web visual brand.</p> 
-          <div id="fi-brand-fiware" class="level-one">
-            <img class="img-responsive"  src="assets/FI-WARE/img/FI-WARE_style_guide/identity/brand-1.svg">
+          <div class="level-one">
+            <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/brand-1.svg">
           </div>
-          <div id="fi-brand-filab" class="level-one">
-            <img class="img-responsive"  src="assets/FI-WARE/img/FI-WARE_style_guide/identity/brand-2.svg">
+          <div class="level-one">
+            <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/brand-2.svg">
           </div>
-        </div>
+        </section>
 
   <!-- Slogan
         ================================================== -->
-        <div class="bs-docs-section">
-          <h1 id="slogan" class="page-header">
-            Slogan
-          </h1>
+        <section id="slogan">
+          <div class="page-header">
+            <h1>Slogan</h1>
+          </div>
 
           <div class="level-one">
             <div class="level-two">
@@ -131,17 +141,17 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
  <!-- Typography
         ================================================== -->
-        <div class="bs-docs-section typo">
-          <h1 id="typo" class="page-header">
-            Tipography
-          </h1>
+        <section id="typo">
+          <div class="page-header">
+            <h1>Tipography</h1>
+          </div>
           <p class="lead">FI-WARE tipography  web rules.</p> 
 
-          <div id="neotech" class="level-one">
+          <div class="level-one">
             <h2>Neo Tech Std<small> Corporate display font family</small></h2>
             <p>You need use neoTech webfont witch @font-face. You can use this typography in display mode but you have to be careful, FireFox and Internet Explorer 9 do not show the sources if the files are in a different domain to the hosting page.</p>
 
@@ -158,206 +168,197 @@
             </div>
           </div>
 
-          <div id="verdana" class="level-one">
+          <div class="level-one">
             <h2 class="text-font">Verdana<small> Corporate text font family</small></h2>
             <p>This typography is by default in Apple operating systems and Windows. Can be used for the rest of reading texts.</p>
             <div class="level-two">
-              <div class="fi-band"></div><h3 style="display:inline;" class="text-font">Regular</h3>
+              <div class="fi-band"></div><h3 class="text-font">Regular</h3>
               <h4 class="text-font"><span class="uppercase"> a  b  c  d...</span>...w  x  y  z</h4>
             </div>
             <div class="level-two">
-              <div class="fi-band"></div><h3 style="display:inline;" class="text-font">Bold</h3>
+              <div class="fi-band"></div><h3 class="text-font">Bold</h3>
               <h4 class="text-font"><span class="uppercase"><strong> a  b  c  d...</span>...w  x  y  z</strong></h4>
             </div>
           </div>
-        </div>
+        </section>
 
  <!-- Color
         ================================================== -->
-        <div class="bs-docs-section color">
-          <h1 id="color" class="page-header">
-            Color
-          </h1>
+        <section id="color">
+          <div class="page-header">
+            <h1>Color</h1>
+          </div>
           <p class="lead">Necesariy color use.</p> 
 
-          <div id="principal-colors" class="level-one">
+          <div class="level-one">
             <h3>Principal colors</h3>
-            
-              <div class="row">
-                <div class="col-md-8 col-sm-8 well color-bluedark-bk"><code>class="color-bluedark-bk"</code></div>
-                <div class="col-md-4 col-sm-4">
+            <div class="span8">
+              <div class="row-fluid">
+                <div class=" span8 well color-bluedark-bk"><code>class="color-bluedark-bk"</code></div>
+                <div class="span4">
                   <small><strong>Hex</strong>#002D67</small>
                   <small><strong>R:</strong> 0, <strong>G:</strong> 45, <strong>B:</strong> 103</small>
                   <small><strong>hsl</strong> (214, 100%, 20%)</small>
                 </div>
-            
+              </div>
             </div>
 
-              <div class="row">
-                <div class="col-md-8 col-sm-8 well color-bluelight-bk"><code>class="color-bluelight-bk"</code></div>
-                <div class="col-md-4 col-sm-4">
+            <div class="span8">
+              <div class="row-fluid">
+                <div class=" span8 well color-bluelight-bk"><code>class="color-bluelight-bk"</code></div>
+                <div class="span4">
                   <small><strong>Hex</strong>#00D3DE</small>
                   <small><strong>R:</strong> 0, <strong>G:</strong> 221, <strong>B:</strong> 222</small>
                   <small><strong>hsl</strong> (183, 100%, 44%)</small>
                 </div>
               </div>
-   
+            </div>
 
-              <div class="row">
-                <div class="col-md-8 col-sm-8 well color-yellow-bk"><code>class="color-yellow-bk"</code></div>
-                <div class="col-md-4 col-sm-4">
+            <div class="span8">
+              <div class="row-fluid">
+                <div class=" span8 well color-yellow-bk"><code>class="color-yellow-bk"</code></div>
+                <div class="span4">
                   <small><strong>Hex</strong>#FFE616</small>
                   <small><strong>R:</strong> 255, <strong>G:</strong> 230, <strong>B:</strong> 22</small>
                   <small><strong>hsl</strong> (54, 100%, 54%)</small>
                 </div>
               </div>
-      
+            </div>
             <div style="clear:both"></div>
           </div>
 
-          <div id="secundary-colors" class="level-one">
+          <div class="level-one">
             <h3>Secundary colors</h3>
-              <div class="row">
-                <div class="col-md-8 col-sm-8 well color-orange-bk"><code>class="color-orange-bk"</code></div>
-                <div class="col-md-4 col-sm-4">
+            <div class="span8">
+              <div class="row-fluid">
+                <div class=" span8 well color-orange-bk"><code>class="color-orange-bk"</code></div>
+                <div class="span4">
                   <small><strong>Hex</strong>#FFB900</small>
                   <small><strong>R:</strong> 255 <strong>G:</strong> 185, <strong>B:</strong> 0</small>
                   <small><strong>hsl</strong> (44, 100%, 50%)</small>
                 </div>
               </div>
-        
-              <div class="row">
-                <div class="col-md-8 col-sm-8 well color-red-bk"><code>class="color-red-bk"</code></div>
-                <div class="col-md-4 col-sm-4">
+            </div>
+
+            <div class="span8">
+              <div class="row-fluid">
+                <div class=" span8 well color-red-bk"><code>class="color-red-bk"</code></div>
+                <div class="span4">
                   <small><strong>Hex</strong>#FF0055</small>
                   <small><strong>R:</strong> 255, <strong>G:</strong> 0, <strong>B:</strong> 85</small>
                   <small><strong>hsl</strong> (340, 100%, 50%)</small>
                 </div>
               </div>
-            
+            </div>
 
-              <div class="row">
-                <div class="col-md-8 col-sm-8 well color-green-bk"><code>class="color-green-bk"</code></div>
-                <div class="col-md-4 col-sm-4">
+            <div class="span8">
+              <div class="row-fluid">
+                <div class=" span8 well color-green-bk"><code>class="color-green-bk"</code></div>
+                <div class="span4">
                   <small><strong>Hex</strong>#95D200</small>
                   <small><strong>R:</strong> 167, <strong>G:</strong> 235, <strong>B:</strong> 0</small>
                   <small><strong>hsl</strong> (77, 100%, 46%)</small>
                 </div>
               </div>
-            
+            </div>
             <div style="clear:both"></div>
           </div>
 
-          <div id="gray-colors" class="level-one">
+          <div class="level-one">
             <h3>Gray colors</h3>
-              <div class="row">
-                <div class="col-md-8 col-sm-8 well color-graydark-bk"><code>class="color-graydark-bk"</code></div>
-                <div class="col-md-4 col-sm-4">
+            <div class="span8">
+              <div class="row-fluid">
+                <div class=" span8 well color-graydark-bk"><code>class="color-graydark-bk"</code></div>
+                <div class="span4">
                   <small><strong>Hex</strong>#F5F5F5</small>
                   <small><strong>R:</strong> 245, <strong>G:</strong> 245, <strong>B:</strong> 245</small>
                   <small><strong>hsl</strong> (0, 0, 96%)</small>
                 </div>
               </div>
-          
+            </div>
 
-              <div class="row">
-                <div class="col-md-8 col-sm-8 well color-graymedium-bk"><code>class="color-graymedium-bk"</code></div>
-                <div class="col-md-4 col-sm-4">
+            <div class="span8">
+              <div class="row-fluid">
+                <div class=" span8 well color-graymedium-bk"><code>class="color-graymedium-bk"</code></div>
+                <div class="span4">
                   <small><strong>Hex</strong>#E2E2E2</small>
                   <small><strong>R:</strong> 226, <strong>G:</strong> 226, <strong>B:</strong> 226</small>
                   <small><strong>hsl</strong> (0, 0, 89%)</small>
                 </div>
               </div>
-            
+            </div>
 
-              <div class="row">
-                <div class="col-md-8 col-sm-8 well color-graylight-bk"><code>class="color-graylight-bk"</code></div>
-                <div class="col-md-4 col-sm-4">
+            <div class="span8">
+              <div class="row-fluid">
+                <div class=" span8 well color-graylight-bk"><code>class="color-graylight-bk"</code></div>
+                <div class="span4">
                   <small><strong>Hex</strong>#C8C8C8</small>
                   <small><strong>R:</strong> 200, <strong>G:</strong> 200, <strong>B:</strong> 200</small>
                   <small><strong>hsl</strong> (0, 0, 78%)</small>
                 </div>
               </div>
-            
+            </div>
             <div style="clear:both"></div>
           </div>
-          <div class="bs-callout bs-callout-info">
-            <h4>Heads up!</h4>
-            <p>Need apply in typography? use <code>class="color-colorName-tx"</code></p>
-          </div>
-        </div>
+          <p><span class="label label-info">Heads up!</span> Need apply in typography? use <code>class="color-colorName-tx"</code></p>
+        </section>
 
  <!-- Paterns
         ================================================== -->
-        <div class="bs-docs-section paterns">
-          <h1 id="patterns" class="page-header">
-            Patterns
-          </h1>
+        <section id="patterns">
+          <div class="page-header">
+            <h1>Patterns</h1>
+          </div>
           <p class="lead">Necesary steps for genererate a FI-WARE patterns.</p> 
-          <img id="patterns-how-make" class="img-responsive" src="assets/FI-WARE/img/FI-WARE_style_guide/identity/pattern-03.png">
-          <img id="patterns-ribbon" class="img-responsive" src="assets/FI-WARE/img/FI-WARE_style_guide/identity/pattern-02.png">
-          <img id="patterns-textures"class="img-responsive" src="assets/FI-WARE/img/FI-WARE_style_guide/identity/pattern-01.png">
-        </div>
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/pattern-03.svg">
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/pattern-02.svg">
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/pattern-01.svg">
+        </section>
 
 
  <!-- Banners
         ================================================== -->
-        <div class="bs-docs-section banners">
-          <h1 id="banners" class="page-header">
-            Banners
-          </h1>
+        <section id="banners">
+          <div class="page-header">
+            <h1>Banners</h1>
+          </div>
           <p class="lead">You can see any example of free use  compositions.</p>
 
         
-          <div class="level-two">
-            <div id="banners-simple" class="level-tree">
-              <h3><div class="fi-band"></div>simple image</h3>
-              <img class="img-responsive" src="assets/FI-WARE/img/FI-WARE_style_guide/identity/banner-simple.png">
+          <div class="level-one">
+            <div class="level-tree">
+              <h3>simple image</h3>
+              <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/banner-simple.png">
             </div>
-          </div>
-          <div class="level-two">
-            <div id="banners-simple-image" class="level-tree">
-              <h3><div class="fi-band"></div>image with ribbon</h3>
-              <img class="img-responsive" src="assets/FI-WARE/img/FI-WARE_style_guide/identity/banner-ribbon.jpg">
+            <div class="level-tree">
+              <h3>image with ribbon</h3>
+              <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/banner-ribbon.jpg">
             </div>
-          </div>
-          <div class="level-two">
-            <h3 id="banners-code"><div class="fi-band"></div>code</h3> <p class="lead">We recommend that you create compositions with code to optimize the reading of the browsers</p>
-            <div class="bs-example" style="min-height:300px">
-              <div class="banner clearfix color-bluelight-bk">
-                <div class="logo-banner">
-                  <a href="index.html" class="logo">
-                    <img alt="FI-WARE" src="assets/FI-WARE/img/logos/logo-white.png">
-                  </a>
-                  <div class="brand">
-                    <span>FI-</span>WARE
-                    <h6 class="color-bluedark-tx">
-                      OPEN APIs FOR OPEN MINDS
-                    </h6>
-                  </div>
-                </div>    
+            <div class="level-tree">
+              <h3>code</h3> <p class="lead">We recommend that you create compositions with code to optimize the reading of the browsers</p>
+              <div class="bs-docs-example">
+                <div class="banner clearfix color-bluelight-bk">
+                  <div class="logo-banner">
+                    <a href="index.html" class="logo">
+                      <img alt="FI-WARE" src="assets/FI-WARE/img/logos/logo-white.png">
+                    </a>
+                    <div class="brand">
+                      <span>FI-</span>WARE
+                      <h6 class="color-bluedark-tx">
+                        OPEN APIs FOR OPEN MINDS
+                      </h6>
+                    </div>
+                  </div>    
+                </div>
               </div>
-            </div>
-<div class="highlight"><pre><code class="html">
-<span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"banner clearfix color-bluelight-bk"</span> <span class="nt">&gt;</span>
-  <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"logo-banner"</span> <span class="nt">&gt;</span>
-    <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"logo"</span> <span class="nt">&gt;</span>
-      <span class="nt">&lt;img </span><span class="na">href=</span><span class="s">"..."</span> <span class="nt">&gt;</span>
-      <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"brand"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span><span class="s">FI-</span><span class="nt">&lt;/span&gt;</span><span class="s">WARE</span>
-        <span class="nt">&lt;h6 </span><span class="na">class=</span><span class="s">"color-bluedark-tx"</span> <span class="nt">&gt;</span><span class="s">OPEN APIs FOR OPEN MINDS</span><span class="nt">&lt;/h6&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
 
-</code></pre></div>  
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"banner clearfix color-bluelight-bk"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="logo-banner">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"logo-banner"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"logo"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;span&gt;</span><span class="pln">FI-</span><span class="tag">&lt;/span&gt;</span>WARE</li><li class="L6"><span class="pln">        </span><span class="tag">&lt;h6</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"color-bluedark-tx"</span><span class="tag">&gt;</span>OPEN APIs FOR OPEN MINDS<span class="tag">&lt;/h6&gt;</span></li><li class="L7"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
 
-            </div>
+              </div>
 
-          <div class="level-two">
-            <h3 id="banners-code-image"><div class="fi-band"></div>code with ribbon</h3>
-            <div class="bs-example">
+          <div class="level-tree">
+            <h3>code with ribbon</h3>
+            <div class="bs-docs-example">
               <div class="banner clearfix color-bluelight-bk">
                 <div class="ribbon"></div>
                   <div class="logo-banner">
@@ -376,110 +377,60 @@
                 
       
 
-<div class="highlight"><pre><code class="html">
-<span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"banner clearfix color-bluelight-bk"</span> <span class="nt">&gt;</span>
-  <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"ribbon"</span> <span class="nt">&gt;</span><span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"logo-banner"</span> <span class="nt">&gt;</span>
-    <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"logo"</span> <span class="nt">&gt;</span>
-      <span class="nt">&lt;img </span><span class="na">href=</span><span class="s">"..."</span> <span class="nt">&gt;</span>
-      <span class="nt">&lt;div </span><span class="na">class=</span><span class="s">"brand"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span&gt;</span><span class="s">FI-</span><span class="nt">&lt;/span&gt;</span><span class="s">WARE</span>
-        <span class="nt">&lt;h6 </span><span class="na">class=</span><span class="s">"color-bluedark-tx"</span> <span class="nt">&gt;</span><span class="s">OPEN APIs FOR OPEN MINDS</span><span class="nt">&lt;/h6&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
-</code></pre></div>  
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"banner clearfix color-bluelight-bk"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="logo-banner">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"ribbon"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="pln">  </span><span class="logo-banner">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"logo-banner"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"logo"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"..."</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"brand"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">        </span><span class="tag">&lt;span&gt;</span><span class="pln">FI-</span><span class="tag">&lt;/span&gt;</span>WARE</li><li class="L6"><span class="pln">        </span><span class="tag">&lt;h6</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"color-bluedark-tx"</span><span class="tag">&gt;</span>OPEN APIs FOR OPEN MINDS<span class="tag">&lt;/h6&gt;</span></li><li class="L7"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
 
 
               <p><span class="label label-info">Heads up!</span> For correct use we need adjust the ribbon class with <a href="./get-started.html#responsive">responsive @media</a></p>
           </div>
-        </div>
+        </section>
 
 
  <!-- Mails Notifications
         ================================================== -->
-        <div class="bs-docs-section">
-          <h1 id="mails-notifications" class="page-header">
-            Mails notifications</h1>
-          </h1>
+        <section id="mails-notifications">
+          <div class="page-header">
+            <h1>Mails notifications</h1>
+          </div>
           <p class="lead">You can see the rules for create mails notifications compositions. <span class="alert warning">comming soon!</span></p> 
-        </div>
+        </section>
 
 
 
 
  <!-- Error pages
         ================================================== -->
-        <div class="bs-docs-section">
-          <h1 id="error-pages" class="page-header">
-            Error pages
-          </h1>
+        <section id="error-pages">
+          <div class="page-header">
+            <h1>Error pages</h1>
+          </div>
           <p class="lead">You can see the rules for create error pages compositions. <span class="alert warning">comming soon!</span></p> 
-        </div>
+        </section>
 
 
 
  <!-- References
         ================================================== -->
-        <div class="bs-docs-section references">
-          <h1 class="page-header" id="references">
-            References
-          </h1>
+        <section id="references">
+          <div class="page-header">
+            <h1>References</h1>
+          </div>
           <p class="lead">
             You can see any example of free use  compositions.
           </p>
-          <img class="img-responsive" src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-01.png">
-          <img class="img-responsive"  src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-02.png">
-          <img class="img-responsive"  src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-03.jpg">
-          <img class="img-responsive"  src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-04.jpg">
-          <img class="img-responsive"  src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-05.jpg">
-          <img class="img-responsive"  src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-06.jpg">
-        </div>
-      </div>
-
-      
-      <div class="col-md-3">
-        <div class="bs-docs-sidebar hidden-print affix" role="complementary" data-spy="affix" data-offset-top="96" data-offset-bottom="0">
-          <ul class="nav bs-docs-sidenav">
-            <li>
-              <a href="#fi-brand">Brand</a>
-            </li>
-            <li><a href="#slogan">Slogan</a>
-            </li>
-            <li>
-              <a href="#typo">Typography</a>
-            </li>
-            <li>
-              <a href="#color">Color</a>
-            </li>
-            <li>
-              <a href="#patterns">Patterns</a>
-            </li>
-            <li>
-              <a href="#banners">Banners</a>
-            </li>
-            <li>
-              <a href="#mails-notifications">Mails notifications</a>
-            </li>
-            <li>
-              <a href="#error-pages">Error pages</a>
-            </li>
-            <li>
-              <a href="#references">References</a>
-            </li>
-          </ul>
-        </div>
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-01.png">
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-02.png">
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-03.jpg">
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-04.jpg">
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-05.jpg">
+          <img src="assets/FI-WARE/img/FI-WARE_style_guide/identity/reference-06.jpg">
+        </section>
       </div>
     </div>
   </div>
-</div></div>
-
 
     <!-- FOOTER -->
       <footer>
-        <div class="col-md-12 footer-box">
+        <div class="span12 footer-box">
         <p> Designed by 
           <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
           <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.</p>
@@ -489,13 +440,33 @@
  <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+    <script src="assets/bootstrap/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-affix.js"></script>
+
+    <script src="assets/bootstrap/js/holder.js"></script>
+    <script src="assets/bootstrap/js/prettify.js"></script>
+
+    <script src="assets/bootstrap/js/application.js"></script>
 
 
     <!-- addons js -->
 
 <!-- Scroll up -->
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
 
@@ -520,5 +491,9 @@
         });
       });
     </script>
-  </body>
-</html>
+
+
+
+  
+
+</body></html>

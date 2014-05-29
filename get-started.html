@@ -5,17 +5,19 @@
     <title>FI-WARE web style · Get started</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FI-WARE web style">
-    <meta name="author" content="@crispinh2o DIT UPM and Ogilvy">
+    <meta name="author" content="DIT UPM and Ogilvy">
+
     <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
+
+    <!-- Bootstrap rewrite -->
     <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
+
     <!-- FI-WARE styles -->
+    <link href="assets/FI-WARE/css/docs.css" rel="stylesheet">
     <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
 
     <!-- addons styles -->
     <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -34,50 +36,46 @@
 
 
 
-    
-<!-- NAVBAR
-      ================================================== -->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="menu-down btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <i class="fa fa-angle-double-down"></i>
           </a>
-          <div class="logo-header in">
-              <a href="index.html" class="logo">
-                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
-              </a>
-              <a href="index.html" class="brand">
-                <span>FI-</span>WARE
-              </a>    
-            </div>
+          <div class="logo-header">
+      <a href="index.html" class="logo">
+        <img alt="FI-WARE" class="logo" src="assets/FI-WARE/img/logos/header-logo.png">
+      </a>
+      <a href="index.html" class="brand">
+        <span>FI-</span>WARE
+</a>    </div>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="dropdown active">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Bootstrap <i class="fa fa-angle-double-down"></i></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li class="active"><a tabindex="-1" href="#">Get Started</a></li>
+                  <li><a tabindex="-1" href="css.html">Css</a></li>
+                  <li><a tabindex="-1" href="components.html">Components</a></li>
+                  <li><a tabindex="-1" href="javascript.html">Javascript</a></li>
+                </ul>
+              </li>
+              <li><a href="identity-guide.html">Identity</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
+                  <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
+                </ul>
+              </li>
+              <li><a href="addons.html">Addons</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap  <i class="fa fa-angle-double-down"></i></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Get Started</a></li>
-                <li><a href="css.html">Css</a></li>
-                <li><a href="components.html">Components</a></li>
-                <li><a href="javascript.html">Javascript</a></li>
-              </ul>
-            </li>
-            <li><a href="identity-guide.html">Identity</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Wordpress <i class="fa fa-angle-double-down"></i></a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li><a tabindex="-1" href="fi-ware.html">FI-WARE</a></li>
-                <li><a tabindex="-1" href="fi-lab.html">FI-LAB</a></li>
-              </ul>
-            </li>
-            <li><a href="addons.html">Addons</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
+      </div>
+    </div>
 
 <!-- Subhead
 ================================================== -->
@@ -93,439 +91,614 @@
 
     <!-- Docs nav
     ================================================== -->
-  <div class="row row-principal">
-    
-      <div class="col-md-9" role="main">
-          <!-- Getting started
-================================================== -->
-<div class="bs-docs-section">
-  <h1 id="download" class="page-header">Download</h1>
-
-  <p class="lead">Before copy this template, be sure to have a code editor (we recommend <a href="http://sublimetext.com/3">Sublime Text 3</a>) and some working knowledge of HTML and CSS.</p>
-  <p> This style guide is based on the framework Bootstrap. You have to respect the structure to create.</p>
-  
-  <a href="./download/FI-WARE_Style_guide.zip" class="btn btn-lg btn-primary disabled" role="button" onclick="_gaq.push(['_trackEvent', 'Getting started', 'Download', 'Download compiled']);">FI-WARE Style Guide</a>
-
-</div>
-
-
-
-<!-- File structure
-================================================== -->
-<div class="bs-docs-section">
-  <h1 id="structure" class="page-header">Structure FI-WARE Style guide-B3</h1>
-
-  <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) FI-WARE Style guide-B3. You'll see something like this:</p>
-<!-- NOTE: This info is intentionally duplicated in the README.
-Copy any changes made here over to the README too. -->
-<div class="highlight"><pre><code class="bash">
-assets/
-  ├── bootstrap/
-  │   ├── css/
-  │   │  ├── bootstrap.css
-  │   │  ├── bootstrap.min.css
-  │   │  ├── docs.min.css
-  │   │  └── sticky-footer-navbar.css
-  │   │
-  │   ├── fonts/
-  │   │   ├── glyphicons-halflings-regular.eot
-  │   │   ├── glyphicons-halflings-regular.svg
-  │   │   ├── glyphicons-halflings-regular.ttf
-  │   │   └── glyphicons-halflings-regular.woff
-  │   │
-  │   └── js/
-  │       ├── bootstrap.js
-  │       ├── bootstrap.min.js
-  │       └── jquery.min.js
-  │
-  │  
-  │
-  ├── bootstrap-rewrite/
-  │   └── css/
-  │      └──bootstrap-rewrite.css
-  │
-  │
-  ├── addons/
-  │   ├── backstretch/
-  │   │  ├── css
-  │   │  │  └── backstretch.css
-  │   │  ├── img
-  │   │  │  ├── backstretch-example1.jpg
-  │   │  │  ├── backstretch-example2.jpg
-  │   │  │  └── backstretch-example3.jpg
-  │   │  └── js
-  │   │         └── jquery.backstretch.min.js
-  │   │
-  │   │
-  │   ├── font awesome/
-  │   │  ├── css/
-  │   │  │  └── font-awesome.min.css
-  │   │  └── fonts/
-  │   │     └── font-awesome webfont.css
-  │   │
-  │   │
-  │   ├── maxlength/
-  │   │  └── js
-  │   │     └── bootstrap-maxlength.min.css
-  │   │
-  │   │
-  │   ├── tour/
-  │   │  ├── css
-  │   │  │  └── bootstrap-tour.min.css
-  │   │  └── js
-  │   │     └── bootstrap-tour.min.js
-  │   │
-  │   │
-  │   └── select2/
-  │      ├── css
-  │      │  └── select2.css
-  │      └── js
-  │         └── select2.js
-  │
-  │
-  ├── FI-WARE/
-  │   ├── css/
-  │   │  ├── fonts.css
-  │   │  └── docs.css
-  │   │
-  │   ├── fonts/
-  │   │  ├── neotechstd-medium webfont
-  │   │  └── neotechstd-regular webfont
-  │   │
-  │   ├── img/
-  │   │  ├── FI-WARE style guide
-  │   │  │  ├── getting_started
-  │   │  │  │  └── responsive-illustrations.png
-  │   │  │  ├── index
-  │   │  │  │  ├── ribon_index.png
-  │   │  │  │  └── texture-text-mask.jpg
-  │   │  │  ├── javascript
-  │   │  │  │  ├── carousel-01.jpg
-  │   │  │  │  ├── carousel-02.jpg
-  │   │  │  │  └── carousel-03.jpg
-  │   │  │  ├── identity
-  │   │  │  │  └── brand.jpg
-  │   │  │  └── wordpress
-  │   │  │     └── examples
-  │   │  │        ├── by-admin.jpg
-  │   │  │        ├── index_FI-LAB.jpg
-  │   │  │        └── post and comments.jpg
-  │   │  └── logos
-  │   │     ├── header-logo-index.png
-  │   │     ├── header-logo.png
-  │   │     └── ico
-  │   │        ├── apple-touch-icon-57-precomposed.png
-  │   │        ├── apple-touch-icon-72-precomposed.png
-  │   │        ├── apple-touch-icon-144-precomposed.png
-  │   │        └── favicon.ico
-  │   │
-  │   └── js/
-  │      └── jquery.js
-  │
-  └── download/
-      └── typography
-         ├── neotechstd-medium.zip
-         └── neotechstd-regular.zip
-
-</code></pre></div>
-
-  <p>This is the most basic form of Bootstrap: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as compiled and minified CSS and JS (<code>bootstrap.min.*</code>). Fonts from Glyphicons are included, as is the optional Bootstrap theme.</p>
-
-
-</div>
+  <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix-top">
+          <li class="active"><a href="#go-on"><i class="fa fa-chevron-right"></i> Go on</a></li>
+          <li class=""><a href="#file-structure"><i class="fa fa-chevron-right"></i> File structure</a></li>
+          <li class=""><a href="#contents"><i class="fa fa-chevron-right"></i> What's included</a></li>
+          <li><a href="#global"><i class="fa fa-chevron-right"></i> Global styles</a></li>
+          <li><a href="#gridSystem"><i class="fa fa-chevron-right"></i> Grid system</a></li>
+          <li><a href="#fluidGridSystem"><i class="fa fa-chevron-right"></i> Fluid grid system</a></li>
+          <li><a href="#layouts"><i class="fa fa-chevron-right"></i> Layouts</a></li>
+          <li><a href="#responsive"><i class="fa fa-chevron-right"></i> Responsive design</a></li>
+        </ul>
+      </div>
+      <div class="span9">
 
 
 
-<!-- Template
-================================================== -->
-<div class="bs-docs-section">
-  <h1 id="template" class="page-header">Basic template</h1>
+        <!-- Download
+        ================================================== -->
+        <section id="go-on">
+          <div class="page-header">
+            <h1>1. Go on..</h1>
+          </div>
+          <p class="lead">Before copy this template, be sure to have a code editor (we recommend <a href="http://sublimetext.com/3">Sublime Text 3</a>) and some working knowledge of HTML and CSS.</p>
+          <p> This style guide is based on the framework Bootstrap. You have to respect the structure to create. We will have 4 sessions in the folder main assets: downloads</p>
 
-  <p class="lead">Start with this basic HTML template. We hope you'll customize our templates and examples, adapting them to suit your needs.</p>
-
-<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>FI-WARE Style Guide<span class="nt">&lt;/title&gt;</span>
-
-    <span class="c">&lt;!-- Bootstrap styles --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"assets/bootstrap/css/bootstrap.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"assets/bootstrap/css/stycky-footer.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!-- Bootstrap styles for this guide --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"assets/bootstrap/css/docs.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!-- Bootstrap rewrite styles for 3.1.1 --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"assets/bootstrap-rewrite/css/bootstrap-rewrite.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!-- FI-WARE Styles --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"assets/addons/font-awesome/css/font-awesome.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
-
-    <span class="c">&lt;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;</span>
-    <span class="c">&lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;</span>
-    <span class="c">&lt;!--[if lt IE 9]&gt;</span>
-<span class="c">      &lt;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"&gt;&lt;/script&gt;</span>
-<span class="c">      &lt;script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"&gt;&lt;/script&gt;</span>
-<span class="c">    &lt;![endif]--&gt;</span>
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
-
-    <span class="c">&lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) --&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-    <span class="c">&lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div>
-</div>
+         
+        </section>
 
 
 
-<!-- Browser support
-================================================== -->
-<div class="bs-docs-section">
-  <h1 id="support" class="page-header">Browser and device support</h1>
-  <p class="lead">Bootstrap is built to work best in the latest desktop and mobile browsers, meaning older browsers might display differently styled, though fully functional, renderings of certain components.</p>
-  <div class="level-two">
-    <h3 id="support-browsers"><div class="fi-band"></div>Supported browsers</h3>
-    <p>Specifically, we support the <strong>latest versions</strong> of the following browsers and platforms. On Windows, <strong>we support Internet Explorer 8-11</strong>. More specific support information is provided below.</p>
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped">
-        <thead>
-          <tr>
-            <td></td>
-            <th>Chrome</th>
-            <th>Firefox</th>
-            <th>Internet Explorer</th>
-            <th>Opera</th>
-            <th>Safari</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Android</th>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> <span class="sr-only">Not Supported</span></td>
-            <td class="text-muted" rowspan="3" style="vertical-align: middle;">N/A</td>
-            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> <span class="sr-only">Not Supported</span></td>
-            <td class="text-muted">N/A</td>
-          </tr>
-          <tr>
-            <th>iOS</th>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-            <td class="text-muted">N/A</td>
-            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> <span class="sr-only">Not Supported</span></td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-          </tr>
-          <tr>
-            <th>Mac OS X</th>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-          </tr>
-          <tr>
-            <th>Windows</th>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> <span class="sr-only">Supported</span></td>
-            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> <span class="sr-only">Not Supported</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p>Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, Firefox for Linux, and Internet Explorer 7, though they are not officially supported.</p>
-  </div>
-  <div class="level-two">
-    <h3 id="support-ie8-ie9"><div class="fi-band"></div>Internet Explorer 8 and 9</h3>
-    <p>Internet Explorer 8 and 9 are also supported, however, please be aware that some CSS3 properties and HTML5 elements are not fully supported by these browsers. In addition, <strong>Internet Explorer 8 requires the use of <a href="https://github.com/scottjehl/Respond">Respond.js</a> to enable media query support.</strong></p>
-    <div class="table-responsive">
-      <table class="table table-bordered table-striped">
-        <thead>
-          <tr>
-            <th scope="col" class="col-xs-4">Feature</th>
-            <th scope="col" class="col-xs-4">Internet Explorer 8</th>
-            <th scope="col" class="col-xs-4">Internet Explorer 9</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"><code>border-radius</code></th>
-            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> Not supported</td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
-          </tr>
-          <tr>
-            <th scope="row"><code>box-shadow</code></th>
-            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> Not supported</td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported</td>
-          </tr>
-          <tr>
-            <th scope="row"><code>transform</code></th>
-            <td class="text-danger"><span class="glyphicon glyphicon-remove"></span> Not supported</td>
-            <td class="text-success"><span class="glyphicon glyphicon-ok"></span> Supported, with <code>-ms</code> prefix</td>
-          </tr>
-          <tr>
-            <th scope="row"><code>transition</code></th>
-            <td colspan="2" class="text-danger"><span class="glyphicon glyphicon-remove"></span> Not supported</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <th scope="row"><code>placeholder</code></th>
-            <td colspan="2" class="text-danger"><span class="glyphicon glyphicon-remove"></span> Not supported</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+        <!-- File structure
+        ================================================== -->
+        <section id="file-structure">
+          <div class="page-header">
+            <h1>2. File structure</h1>
+          </div>
+          <p class="lead">You'll find the following file structure and contents.</p>
+<pre class="prettyprint"><span class="pln">  assets</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">/</span><span class="pln">
 
-    <p>Visit <a href="http://caniuse.com/">Can I use...</a> for details on browser support of CSS3 and HTML5 features.</p>
-  </div>
-  <div class="level-two">
-    <h3 id="support-ie8-respondjs"><div class="fi-band"></div>Internet Explorer 8 and Respond.js</h3>
-    <p>Beware of the following caveats when using Respond.js in your development and production environments for Internet Explorer 8.</p>
-    <h4 id="respond-js-x-domain">Respond.js and cross-domain CSS</h4>
-    <p>Using Respond.js with CSS hosted on a different (sub)domain (for example, on a CDN) requires some additional setup. <a href="https://github.com/scottjehl/Respond/blob/master/README.md#cdnx-domain-setup">See the Respond.js docs</a> for details.</p>
-    <h4 id="respond-file-proto">Respond.js and <code>file://</code></h4>
-    <p>Due to browser security rules, Respond.js doesn't work with pages viewed via the <code>file://</code> protocol (like when opening a local HTML file). To test responsive features in IE8, view your pages over HTTP(S). <a href="https://github.com/scottjehl/Respond/blob/master/README.md#support--caveats">See the Respond.js docs</a> for details.</p>
-    <h4 id="respond-import">Respond.js and <code>@import</code></h4>
-    <p>Respond.js doesn't work with CSS that's referenced via <code>@import</code>. In particular, some Drupal configurations are known to use <code>@import</code>. <a href="https://github.com/scottjehl/Respond/blob/master/README.md#support--caveats">See the Respond.js docs</a> for details.</p>
-  </div>
-  <div class="level-two">
-    <h3 id="support-ie8-box-sizing"><div class="fi-band"></div>Internet Explorer 8 and box-sizing</h3>
-    <p>IE8 does not fully support <code>box-sizing: border-box;</code> when combined with <code>min-width</code>, <code>max-width</code>, <code>min-height</code>, or <code>max-height</code>. For that reason, as of v3.0.1, we no longer use <code>max-width</code> on <code>.container</code>s.</p>
-  </div>
-  <div class="level-two">
-    <h3 id="support-ie-compatibility-modes"><div class="fi-band"></div>IE Compatibility modes</h3>
-    <p>Bootstrap is not supported in the old Internet Explorer compatibility modes. To be sure you're using the latest rendering mode for IE, consider including the appropriate <code>&lt;meta&gt;</code> tag in your pages:</p>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
-</code></pre></div>
-    <p>Confirm the document mode by opening the debugging tools: press <kbd>F12</kbd> and check the "Document Mode".</p>
-    <p>This tag is included in all Bootstrap's documentation and examples to ensure the best rendering possible in each supported version of Internet Explorer.</p>
-    <p>See <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge">this StackOverflow question</a> for more information.</p>
-  <div class="level-two">
-    <h3 id="support-ie10-width"><div class="fi-band"></div>Internet Explorer 10 in Windows 8 and Windows Phone 8</h3>
-    <p>Internet Explorer 10 doesn't differentiate <strong>device width</strong> from <strong>viewport width</strong>, and thus doesn't properly apply the media queries in Bootstrap's CSS. Normally you'd just add a quick snippet of CSS to fix this:</p>
-<div class="highlight"><pre><code class="scss"><span class="k">@-ms-viewport</span>       <span class="p">{</span> <span class="na">width</span><span class="o">:</span> <span class="n">device-width</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></div>
-    <p>However, this doesn't work for devices running Windows Phone 8 versions older than <a href="http://blogs.windows.com/windows_phone/b/wpdev/archive/2013/10/14/introducing-windows-phone-preview-for-developers.aspx">Update 3 (a.k.a. GDR3)</a>, as it causes such devices to show a mostly desktop view instead of narrow "phone" view. To address this, you'll need to <strong>include the following CSS and JavaScript to work around the bug</strong>.</p>
-<div class="highlight"><pre><code class="scss"><span class="k">@-webkit-viewport</span>   <span class="p">{</span> <span class="na">width</span><span class="o">:</span> <span class="n">device-width</span><span class="p">;</span> <span class="p">}</span>
-<span class="k">@-moz-viewport</span>      <span class="p">{</span> <span class="na">width</span><span class="o">:</span> <span class="n">device-width</span><span class="p">;</span> <span class="p">}</span>
-<span class="k">@-ms-viewport</span>       <span class="p">{</span> <span class="na">width</span><span class="o">:</span> <span class="n">device-width</span><span class="p">;</span> <span class="p">}</span>
-<span class="k">@-o-viewport</span>        <span class="p">{</span> <span class="na">width</span><span class="o">:</span> <span class="n">device-width</span><span class="p">;</span> <span class="p">}</span>
-<span class="k">@viewport</span>           <span class="p">{</span> <span class="na">width</span><span class="o">:</span> <span class="n">device-width</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></div>
+  <span class="pun">│</span><span class="pun">   ├──</span><span class="pln"> img</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> glyphicons-halflings-white</span><span class="pun">.</span><span class="pln">png
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> glyphicons-halflings</span><span class="pun">.</span><span class="pln">png
 
-<div class="highlight"><pre><code class="js"><span class="k">if</span> <span class="p">(</span><span class="nx">navigator</span><span class="p">.</span><span class="nx">userAgent</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/IEMobile\/10\.0/</span><span class="p">))</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">msViewportStyle</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">'style'</span><span class="p">)</span>
-  <span class="nx">msViewportStyle</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">createTextNode</span><span class="p">(</span>
-      <span class="s1">'@-ms-viewport{width:auto!important}'</span>
-    <span class="p">)</span>
-  <span class="p">)</span>
-  <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">'head'</span><span class="p">).</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">msViewportStyle</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div>
-    <p>For more information and usage guidelines, read <a href="http://timkadlec.com/2013/01/windows-phone-8-and-device-width/">Windows Phone 8 and Device-Width</a>.</p>
-    <p>As a heads up, we include this in the Bootstrap docs as an example.</p>
-  </div>
-  <div class="level-two">
-    <h3 id="support-safari-percentages"><div class="fi-band"></div>Safari percent rounding</h3>
-    <p>As of Safari v6.1 for OS X and Safari for iOS v7.0.1, Safari's rendering engine has some trouble with the number of decimal places used in our <code>.col-*-1</code> grid classes. So if you have 12 individual grid columns, you'll notice that they come up short compared to other rows of columns. We can't do much here (<a href="https://github.com/twbs/bootstrap/issues/9282">see #9282</a>) but you do have some options:</p>
-    <ul>
-      <li>Add <code>.pull-right</code> to your last grid column to get the hard-right alignment</li>
-      <li>Tweak your percentages manually to get the perfect rounding for Safari (more difficult than the first option)</li>
-    </ul>
-    <p>We'll keep an eye on this though and update our code if we have an easy solution.</p>
-  </div>
-  <div class="level-two">
-    <h3 id="support-fixed-position-keyboards"><div class="fi-band"></div>Modals, navbars, and virtual keyboards</h3>
-    <h4>Overflow and scrolling</h4>
-    <p>Support for <code>overflow: hidden</code> on the <code>&lt;body&gt;</code> element is quite limited in iOS and Android. To that end, when you scroll past the top or bottom of a modal in either of those devices' browsers, the <code>&lt;body&gt;</code> content will begin to scroll.</p>
-    <h4>Virtual keyboards</h4>
-    <p>Also, note that if you're using inputs in your modal or navbar, iOS has a rendering bug that doesn't update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to <code>position: absolute</code> or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application.</p>
-    <h4>Navbar Dropdowns</h4>
-    <p>The <code>.dropdown-backdrop</code> element isn't used on iOS in the nav because of the complexity of z-indexing. Thus, to close dropdowns in navbars, you must directly click the dropdown element (or any other element which will fire a click event in iOS).</p>
-  </div>
-  <div class="level-two">
-    <h3 id="support-browser-zooming"><div class="fi-band"></div>Browser zooming</h3>
-    <p>Page zooming inevitably presents rendering artifacts in some components, both in Bootstrap and the rest of the web. Depending on the issue, we may be able to fix it (search first and then open an issue if need be). However, we tend to ignore these as they often have no direct solution other than hacky workarounds.</p>
-  </div>
-  <div class="level-two">
-    <h3 id="support-printing"><div class="fi-band"></div>Printer viewports</h3>
-    <p>Even in some modern browsers, printing can be quirky. In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap's extra-small grid being unexpectedly activated when printing. <a href="https://github.com/twbs/bootstrap/issues/12078">See #12078 for some details.</a> Suggested workarounds:</p>
-    <ul>
-      <li>Embrace the extra-small grid and make sure your page looks acceptable under it.</li>
-      <li>Customize the values of the <code>@screen-*</code> Less variables so that your printer paper is considered larger than extra-small.</li>
-      <li>Add custom media queries to change the grid size breakpoints for print media only.</li>
-    </ul>
-  </div>
-  <div class="level-two">
-    <h3 id="support-android-stock-browser"><div class="fi-band"></div>Android stock browser</h3>
-    <p>Out of the box, Android 4.1 (and even some newer releases apparently) ship with the Browser app as the default web browser of choice (as opposed to Chrome). Unfortunately, the Browser app has lots of bugs and inconsistencies with CSS in general.</p>
-    <h4>Select menus</h4>
-    <p>On <code>&lt;select&gt;</code> elements, the Android stock browser will not display the side controls if there is a <code>border-radius</code> and/or <code>border</code> applied. Use the snippet of code below to remove the offending CSS and render the <code>&lt;select&gt;</code> as an unstyled element on the Android stock browser. The user agent sniffing avoids interference with Chrome, Safari, and Mozilla browsers.</p>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;script&gt;</span>
-<span class="kd">var</span> <span class="nx">nua</span> <span class="o">=</span> <span class="nx">navigator</span><span class="p">.</span><span class="nx">userAgent</span>
-<span class="kd">var</span> <span class="nx">isAndroid</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Mozilla/5.0'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Android '</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'AppleWebKit'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Chrome'</span><span class="p">)</span> <span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<span class="k">if</span> <span class="p">(</span><span class="nx">isAndroid</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'select.form-control'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'form-control'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'width'</span><span class="p">,</span> <span class="s1">'100%'</span><span class="p">)</span>
-<span class="p">}</span>
-<span class="nt">&lt;/script&gt;</span>
-</code></pre></div>
-  <p>Want to see an example? <a href="http://jsbin.com/OyaqoDO/2">Check out this JS Bin demo.</a></p>
-  </div>
-</div>
-</div>
-<!-- Deepen more
-================================================== -->
-<div class="bs-docs-section">
-  <h1 id="deepen" class="page-header">Deepen</h1>
-  <p class="lead">For deepen more about Bootstrap framework go to the official <a href="http://getbootstrap.com/">Bootstrap</a> site.</p>
-</div>
-</div>
-        <div class="col-md-3">
-          <div class="bs-docs-sidebar hidden-print affix" role="complementary" data-spy="affix" data-offset-top="96" data-offset-bottom="0">
-            <ul class="nav bs-docs-sidenav">
-              <li>
-                <a href="#download">Download</a>
-              </li>
-              <li>
-                <a href="#structure">Structure</a>
-              </li>
-              <li>
-                <a href="#template">Basic template</a>
-              </li>
-              <li>
-                <a href="#support">Browser and device support</a>
-                <ul class="nav">
-                  <li><a href="#support-browsers">Supported browsers</a></li>
-                  <li><a href="#support-ie8-ie9">Internet Explorer 8-9</a></li>
-                  <li><a href="#support-ie8-respondjs">IE8 and Respond.js</a></li>
-                  <li><a href="#support-ie8-box-sizing">IE8 and box-sizing</a></li>
-                  <li><a href="#support-ie-compatibility-modes">IE Compatibility modes</a></li>
-                  <li><a href="#support-ie10-width">IE10 and Windows (Phone) 8</a></li>
-                  <li><a href="#support-safari-percentages">Safari percent rounding</a></li>
-                  <li><a href="#support-fixed-position-keyboards">Modals, navbars, and virtual keyboards</a></li>
-                  <li><a href="#support-browser-zooming">Browser zooming</a></li>
-                  <li><a href="#support-printing">Printer viewports</a></li>
-                  <li><a href="#support-android-stock-browser">Android stock browser</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#deepen">Deepen</a>
-              </li>
+  </span></span><span class="pun">│</span><span class="pun">   ├──</span><span class="pln"> css</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> bootstrap</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> bootstrap-responsive</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> sticky-footer-navbar</span><span class="pun">.</span><span class="pln">css
+
+  </span><span class="pun">└──</span><span class="pun"> └──</span><span class="pln"> js</span><span class="pun">/</span><span class="pln">
+         <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">.</span><span class="pln">min</span><span class="pun">.</span><span class="pln">js
+         <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">alert</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">button</span><span class="pun">.</span><span class="pln">js
+         <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">carousel</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">collapse</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">dropdown</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">modal</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">popover</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">scrollspy</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">tab</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">tooltip</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">├──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">tranastions</span><span class="pun">.</span><span class="pln">js
+  </span>       <span class="pun">└──</span><span class="pln"> bootstrap</span><span class="pun">-</span><span class="pln">typehead</span><span class="pun">.</span><span class="pln">js
+  </span>
+
+  </span><span class="pun">├──</span><span class="pln"> bootstrap-rewrite</span><span class="pun">/</span><span class="pln">
+
+  <span class="pun">└──</span><span class="pun">   ├──</span><span class="pln"> css</span><span class="pun">/</span><span class="pln">
+  </span><span class="pln">   </span><span class="pun">      └──</span><span class="pln">bootstrap-rewrite</span><span class="pun">.</span><span class="pln">css
+
+
+  </span><span class="pun">├──</span><span class="pln"> addons</span><span class="pun">/</span><span class="pln">
+
+  <span class="pun">│</span><span class="pun">   ├──</span><span class="pln"> backstretch</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> css</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> backstretch</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> img</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      ├──</span><span class="pln"> backstretch-example1</span><span class="pun">.</span><span class="pln">jpg
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      ├──</span><span class="pln"> backstretch-example2</span><span class="pun">.</span><span class="pln">jpg
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> backstretch-example3</span><span class="pun">.</span><span class="pln">jpg
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├───</span><span class="pln"> js</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> jquery.backstretch.min</span><span class="pun">.</span><span class="pln">js
+
+
+  <span class="pun">│</span><span class="pun">    ├──</span><span class="pln"> font awesome</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> css</span><span class="pun">/</span>
+  <span class="pun">│</span><span class="pln">   </span><span class="pun">      ├──</span><span class="pln"> font-awesome-ie7.min</span><span class="pun">.</span><span class="pln">css
+  <span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> font-awesome.min</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> fonts</span><span class="pun">/</span>
+  <span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> font-awesome webfont</span><span class="pun">.</span><span class="pln">css
+
+
+  <span class="pun">│</span><span class="pun">    ├──</span><span class="pln"> maxlength</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> js</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> bootstrap-maxlength.min</span><span class="pun">.</span><span class="pln">css
+
+
+  <span class="pun">│</span><span class="pun">    ├──</span><span class="pln"> tour</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> css</span>
+  <span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> bootstrap-tour.min</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> js</span>
+  <span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> bootstrap-tour.min</span><span class="pun">.</span><span class="pln">js
+
+
+  <span class="pun">│</span><span class="pun">    ├──</span><span class="pln"> select2</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> css</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> select2</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> js</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">      └──</span><span class="pln"> select2</span><span class="pun">.</span><span class="pln">js
+
+
+  </span><span class="pun">├──</span><span class="pln"> FI-WARE</span><span class="pun">/</span><span class="pln">
+
+  <span class="pun">│</span><span class="pun">   ├──</span><span class="pln"> css</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> fonts</span><span class="pun">.</span><span class="pln">css
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> docs</span><span class="pun">.</span><span class="pln">css
+
+  <span class="pun">│</span><span class="pun">   ├──</span><span class="pln"> fonts</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> neotechstd-medium webfont</span>
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   └──</span><span class="pln"> neotechstd-regular webfont</span>
+
+  <span class="pun">│</span><span class="pun">   ├──</span><span class="pln"> img</span><span class="pun">/</span><span class="pln">
+  </span><span class="pun">│</span><span class="pln">   </span><span class="pun">   ├──</span><span class="pln"> FI-WARE style guide</span>
+  <span class="pun">│</span><span class="pln">      </span><span class="pun">   ├──</span><span class="pln"> getting_started</span>
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   └──</span><span class="pln"> responsive-illustrations</span><span class="pun">.</span><span class="pln">png
+  <span class="pun">│</span><span class="pln">      </span><span class="pun">   ├──</span><span class="pln"> index</span>
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   ├──</span><span class="pln"> ribon_index</span><span class="pun">.</span><span class="pln">png
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   └──</span><span class="pln"> texture-text-mask</span><span class="pun">.</span><span class="pln">jpg
+  <span class="pun">│</span><span class="pln">      </span><span class="pun">   ├──</span><span class="pln"> javascript</span>
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   ├──</span><span class="pln"> carousel-01</span><span class="pun">.</span><span class="pln">jpg
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   ├──</span><span class="pln"> carousel-02</span><span class="pun">.</span><span class="pln">jpg
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   └──</span><span class="pln"> carousel-03</span><span class="pun">.</span><span class="pln">jpg
+  <span class="pun">│</span><span class="pln">      </span><span class="pun">   ├──</span><span class="pln"> identity</span>
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">      ├──</span><span class="pln"> brand</span><span class="pun">.</span><span class="pln">jpg
+  <span class="pun">│</span><span class="pln">      </span><span class="pun">   └──</span><span class="pln"> wordpress</span>
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   └──</span><span class="pln"> examples</span>
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">      ├──</span><span class="pln"> by-admin</span><span class="pun">.</span><span class="pln">jpg
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">      ├──</span><span class="pln"> index_FI-LAB</span><span class="pun">.</span><span class="pln">jpg
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">      └──</span><span class="pln"> post and comments</span><span class="pun">.</span><span class="pln">jpg
+  <span class="pun">│</span><span class="pln">      </span><span class="pun">└──</span><span class="pln"> logos</span>
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">├──</span><span class="pln"> header-logo-index</span><span class="pun">.</span><span class="pln">png
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">├──</span><span class="pln"> header-logo</span><span class="pun">.</span><span class="pln">png
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">└──</span><span class="pln"> ico</span>
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   ├──</span><span class="pln"> apple-touch-icon-57-precomposed</span><span class="pun">.</span><span class="pln">png
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   ├──</span><span class="pln"> apple-touch-icon-72-precomposed</span><span class="pun">.</span><span class="pln">png
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   ├──</span><span class="pln"> apple-touch-icon-144-precomposed</span><span class="pun">.</span><span class="pln">png
+  <span class="pun">│</span><span class="pln">         </span><span class="pun">   └──</span><span class="pln"> favicon</span><span class="pun">.</span><span class="pln">ico</span>
+
+  <span class="pun">└──</span><span class="pun"> └──</span><span class="pln"> js</span><span class="pun">/</span><span class="pln">
+  </span>    <span class="pun">   └──</span><span class="pln"> jquery</span><span class="pun">.</span><span class="pln">js
+</pre>
+          <p>For compress image files, we recomend you <a href="http://imageoptim.com/">ImageOptim</a>, a Mac app for compressing PNGs.</p>
+      
+        </section>
+
+
+
+        <!-- Contents
+        ================================================== -->
+        <section id="contents">
+          <div class="page-header">
+            <h1>3. What's included</h1>
+          </div>
+          <p class="lead">FI-WARE Style guide comes equipped with HTML, CSS, JS for all sorts of things and Wordpress template but they can be summarized with a handful of categories visible at the top of the <a href="index.html">documentation</a>.</p>
+          <div class="level-one">
+            <h2>Docs sections</h2>
+            <div class="level-tree">
+              <h4><a href="./scaffolding.html">Get satarted</a></h4>
+              <p>Resume and global styles for the body to reset type and background, link styles, grid system, and two simple layouts.</p>
+            </div>
+            <div class="level-tree">
+              <h4><a href="./base-css.html">Base CSS</a></h4>
+              <p>Styles for common HTML elements like typography, code, tables, forms, and buttons. Also includes <a href="http://glyphicons.com">Glyphicons</a>, a great little icon set.</p>
+            </div>
+            <div class="level-tree">
+              <h4><a href="./components.html">Components</a></h4>
+              <p>Basic styles for common interface components like tabs and pills, navbar, alerts, page headers, and more.</p>
+            </div>
+            <div class="level-tree">
+              <h4><a href="./javascript.html">JavaScript plugins</a></h4>
+              <p>Similar to Components, these JavaScript plugins are interactive components for things like tooltips, popovers, modals, and more.</p>
+            </div>
+            <div class="level-tree">
+              <h4><a href="./identity-guide.html">Identity web</a></h4>
+              <p>Rules for a correct visual web use.</p>
+            </div>
+            <div class="level-tree">
+              <h4><a href="./wordpress.html">Wordpress</a></h4>
+              <p>Template and styles for FI-WARE Bootstrap.</p>
+            </div>
+            <div class="level-tree">
+              <h4><a href="./addons.html">Addons</a></h4>
+              <p>jQuery plugins implementations for eficient work.</p>
+            </div>
+          </div>
+          <div class="level-one">
+            <h2>List of components</h2>
+            <p>Together, the <strong>Components</strong> and <strong>JavaScript plugins</strong> sections provide the following interface elements:</p>
+            <ul>
+              <li>Button groups</li>
+              <li>Button dropdowns</li>
+              <li>Navigational tabs, pills, and lists</li>
+              <li>Navbar</li>
+              <li>Labels</li>
+              <li>Badges</li>
+              <li>Page headers and hero unit</li>
+              <li>Thumbnails</li>
+              <li>Alerts</li>
+              <li>Progress bars</li>
+              <li>Modals</li>
+              <li>Dropdowns</li>
+              <li>Tooltips</li>
+              <li>Popovers</li>
+              <li>Accordion</li>
+              <li>Carousel</li>
+              <li>Typeahead</li>
             </ul>
           </div>
-        </div>
+        </section>
+
+
+        <!-- Global FI-WARE style guide settings
+        ================================================== -->
+        <section id="global">
+          <div class="page-header">
+            <h1>4. Global settings</h1>
+          </div>
+          <div class="level-two">
+            <div class="fi-band"></div><h3>Requires HTML5 doctype</h3>
+            <p>FI-WARE style guide makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li><li class="L1"><span class="tag">&lt;html</span><span class="pln"> </span><span class="atn">lang</span><span class="pun">=</span><span class="atv">"en"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">  ...</span></li><li class="L3"><span class="tag">&lt;/html&gt;</span></li></ol></pre>
+          </div>
+          <div class="level-two">
+            <div class="fi-band"></div><h3>Basic HTML template</h3>
+      
+            <p class="lead">With a brief intro into the contents out of the way, we can focus on putting FI-WARE style guide to use. To do that, we'll utilize a basic HTML template that includes everything we mentioned in the <a href="./get-started.html#file-structure">File structure</a>.</p>
+            <p>Now, here's a look at a <strong>typical HTML file</strong>:</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li><li class="L1"><span class="tag">&lt;html&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;head&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;title&gt;</span><span class="pln">FI-WARE style guide </span><span class="tag">&lt;/title&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">  </span><span class="tag">&lt;/head&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;body&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Hello, world!</span><span class="tag">&lt;/h1&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://code.jquery.com/jquery.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;/body&gt;</span></li><li class="L0"><span class="tag">&lt;/html&gt;</span></li></ol></pre>
+          <p>To make this <strong>a FI-WARE template</strong>, just include the appropriate CSS and JS files:</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="dec">&lt;!DOCTYPE html&gt;</span></li><li class="L1"><span class="tag">&lt;html&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;head&gt;</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;title&gt;</span><span class="pln">FI-WARE style guide Template</span><span class="tag">&lt;/title&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">    </span><span class="com">&lt;!-- Bootstrap styles --&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"assets/bootstrap/css/bootstrap.min.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="atn">media</span><span class="pun">=</span><span class="atv">"screen"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"assets/bootstrap/css/bootstrap-responsive.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="tag">&gt;</span></li><li class="L8"><span class="pln">    </span><span class="com">&lt;!-- Bootstrap rewrite --&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"assets/bootstrap/css/bootstrap-rewrite.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="tag">&gt;</span></li><li class="L10"><span class="pln">    </span><span class="com">&lt;!-- Addons styles --&gt;</span></li><li class="L11"><span class="pln">    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"assets/addons/font-awesome/css/font-awesome.min.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"assets/addons/font-awesome/css/font-awesome-ie7.min.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="pln"> </span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/head&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;body&gt;</span></li><li class="L9"><span class="pln">    </span><span class="tag">&lt;h1&gt;</span><span class="pln">Hello, world!</span><span class="tag">&lt;/h1&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://code.jquery.com/jquery.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"assets/bootstrap/js/bootstrap.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span></li><li class="L0"><span class="pln">    </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"addons/.."</span><span class="tag">&gt;&lt;/script&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;/body&gt;</span></li><li class="L3"><span class="tag">&lt;/html&gt;</span></li></ol></pre>
+            <p><strong>And you're set!</strong> With those two files added, you can begin to develop any site or application with FI-WARE style guide.</p>
+          </div>
+        </section>
+
+
+
+
+        <!-- Grid system
+        ================================================== -->
+        <section id="gridSystem">
+          <div class="page-header">
+            <h1>5. Default grid system</h1>
+          </div>
+          <div class="level-one">
+            <h2>Live grid example</h2>
+            <p>The default FI-WARE style guide grid system utilizes <strong>12 columns</strong>, making for a 940px wide container  without <a href="#responsive">responsive features</a> enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</p>
+            <div class="bs-docs-grid">
+              <div class="row show-grid">
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+              </div>
+              <div class="row show-grid">
+                <div class="span2">2</div>
+                <div class="span3">3</div>
+                <div class="span4">4</div>
+              </div>
+              <div class="row show-grid">
+                <div class="span4">4</div>
+                <div class="span5">5</div>
+              </div>
+              <div class="row show-grid">
+                <div class="span9">9</div>
+              </div>
+            </div>
+          </div>
+          <div class="level-two">
+            <div class="fi-band"></div><h3>Basic grid HTML</h3>
+            <p>For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns. As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span8"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+            <p>Given this example, we have <code>.span4</code> and <code>.span8</code>, making for 12 total columns and a complete row.</p>
+          </div>
+          <div class="level-one">
+            <h2>Offsetting columns</h2>
+            <p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns.</p>
+            <div class="bs-docs-grid">
+              <div class="row show-grid">
+                <div class="span4">4</div>
+                <div class="span3 offset2">3 offset 2</div>
+              </div><!-- /row -->
+              <div class="row show-grid">
+                <div class="span3 offset1">3 offset 1</div>
+                <div class="span3 offset2">3 offset 2</div>
+              </div><!-- /row -->
+              <div class="row show-grid">
+                <div class="span6 offset3">6 offset 3</div>
+              </div><!-- /row -->
+            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span3 offset2"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+          </div>
+          <div class="level-one">
+            <h2>Nesting columns</h2>
+            <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column. Nested rows should include a set of columns that add up to the number of columns of its parent.</p>
+            <div class="row show-grid">
+              <div class="span9">
+                Level 1 column
+                <div class="row show-grid">
+                  <div class="span6">
+                    Level 2
+                  </div>
+                  <div class="span3">
+                    Level 2
+                  </div>
+                </div>
+              </div>
+            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span9"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    Level 1 column</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span6"</span><span class="tag">&gt;</span><span class="pln">Level 2</span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span3"</span><span class="tag">&gt;</span><span class="pln">Level 2</span><span class="tag">&lt;/div&gt;</span></li><li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+          </div>
+        </section>
+
+
+
+        <!-- Fluid grid system
+        ================================================== -->
+        <section id="fluidGridSystem">
+          <div class="page-header">
+            <h1>6. Fluid grid system</h1>
+          </div>
+          <div class="level-one">
+            <h2>Live fluid grid example</h2>
+            <p>The fluid grid system uses percents instead of pixels for column widths. It has the same responsive capabilities as our fixed grid system, ensuring proper proportions for key screen resolutions and devices.</p>
+            <div class="bs-docs-grid">
+              <div class="row-fluid show-grid">
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+                <div class="span1">1</div>
+              </div>
+              <div class="row-fluid show-grid">
+                <div class="span4">4</div>
+                <div class="span4">4</div>
+                <div class="span4">4</div>
+              </div>
+              <div class="row-fluid show-grid">
+                <div class="span4">4</div>
+                <div class="span8">8</div>
+              </div>
+              <div class="row-fluid show-grid">
+                <div class="span6">6</div>
+                <div class="span6">6</div>
+              </div>
+              <div class="row-fluid show-grid">
+                <div class="span12">12</div>
+              </div>
+            </div>
+          </div>
+          <div class="level-two">
+            <div class="fi-band"></div><h3>Basic fluid grid HTML</h3>
+            <p>Make any row "fluid" by changing <code>.row</code> to <code>.row-fluid</code>. The column classes stay the exact same, making it easy to flip between fixed and fluid grids.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span8"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+          </div>
+          <div class="level-one">
+            <h2>Fluid offsetting</h2>
+            <p>Operates the same way as the fixed grid system offsetting: add <code>.offset*</code> to any column to offset by that many columns.</p>
+            <div class="bs-docs-grid">
+              <div class="row-fluid show-grid">
+                <div class="span4">4</div>
+                <div class="span4 offset4">4 offset 4</div>
+              </div><!-- /row -->
+              <div class="row-fluid show-grid">
+                <div class="span3 offset3">3 offset 3</div>
+                <div class="span3 offset3">3 offset 3</div>
+              </div><!-- /row -->
+              <div class="row-fluid show-grid">
+                <div class="span6 offset6">6 offset 6</div>
+              </div><!-- /row -->
+            </div>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span4 offset2"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+          <div class="level-one">
+            <h2>Fluid nesting</h2>
+            <p>Fluid grids utilize nesting differently: each nested level of columns should add up to 12 columns. This is because the fluid grid uses percentages, not pixels, for setting widths.</p>
+            <div class="row-fluid show-grid">
+              <div class="span12">
+                Fluid 12
+                <div class="row-fluid show-grid">
+                  <div class="span6">
+                    Fluid 6
+                    <div class="row-fluid show-grid">
+                      <div class="span6">
+                        Fluid 6
+                      </div>
+                      <div class="span6">
+                        Fluid 6
+                      </div>
+                    </div>
+                  </div>
+                  <div class="span6">
+                    Fluid 6
+                  </div>
+                </div>
+              </div>
+            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span12"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    Fluid 12</span></li><li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span6"</span><span class="tag">&gt;</span></li><li class="L5"><span class="pln">        Fluid 6</span></li><li class="L6"><span class="pln">        </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span></li><li class="L7"><span class="pln">          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span6"</span><span class="tag">&gt;</span><span class="pln">Fluid 6</span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">          </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span6"</span><span class="tag">&gt;</span><span class="pln">Fluid 6</span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="pln">        </span><span class="tag">&lt;/div&gt;</span></li><li class="L0"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li><li class="L1"><span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span6"</span><span class="tag">&gt;</span><span class="pln">Fluid 6</span><span class="tag">&lt;/div&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+         </div>
+        </section>
+
+
+
+
+        <!-- Layouts (Default and fluid)
+        ================================================== -->
+        <section id="layouts">
+          <div class="page-header">
+            <h1>7. Layouts</h1>
+          </div>
+          <div class="level-one">
+            <h2>Fixed layout</h2>
+            <p>Provides a common fixed-width (and optionally responsive) layout with only <code>&lt;div class="container"&gt;</code> required.</p>
+            <div class="mini-layout">
+              <div class="mini-layout-body"></div>
+            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;body&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    ...</span></li><li class="L3"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L4"><span class="tag">&lt;/body&gt;</span></li></ol></pre>
+          </div>
+          <div class="level-one">
+            <h2>Fluid layout</h2>
+            <p>Create a fluid, two-column page with <code>&lt;div class="container-fluid"&gt;</code>—great for applications and docs.</p>
+            <div class="mini-layout fluid">
+              <div class="mini-layout-sidebar"></div>
+              <div class="mini-layout-body"></div>
+            </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"container-fluid"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-fluid"</span><span class="tag">&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span2"</span><span class="tag">&gt;</span></li><li class="L3"><span class="pln">      </span><span class="com">&lt;!--Sidebar content--&gt;</span></li><li class="L4"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"span10"</span><span class="tag">&gt;</span></li><li class="L6"><span class="pln">      </span><span class="com">&lt;!--Body content--&gt;</span></li><li class="L7"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;/div&gt;</span></li><li class="L9"><span class="tag">&lt;/div&gt;</span></li></ol></pre>
+          </div>
+        </section>
+
+
+
+
+        <!-- Responsive design
+        ================================================== -->
+        <section id="responsive">
+          <div class="page-header">
+            <h1>8. Responsive design</h1>
+          </div>
+          <div class="level-one">
+            <h2>Enabling responsive features</h2>
+            <p>Turn on responsive CSS in your project by including the proper meta tag and additional stylesheet within the <code>&lt;head&gt;</code> of your document. You need only include the meta tag.</p>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"viewport"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span></li><li class="L1"><span class="tag">&lt;link</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"assets/css/bootstrap-responsive.css"</span><span class="pln"> </span><span class="atn">rel</span><span class="pun">=</span><span class="atv">"stylesheet"</span><span class="tag">&gt;</span></li></ol></pre>
+            <p><span class="label label-info">Heads up!</span>  FI-WARE style guide doesn't include responsive features by default at this time as not everything needs to be responsive. Instead of encouraging developers to remove this feature, we figure it best to enable it as needed.</p>
+          </div>
+          <div class="level-one">
+            <h2>About responsive FI-WARE style guide</h2>
+            <img src="assets/FI-WARE/img/FI-WARE_style_guide/getting_started/responsive-illustrations.png" alt="Responsive devices" style="float: right; margin: 0 0 20px 20px;">
+            <p>Media queries allow for custom CSS based on a number of conditions—ratios, widths, display type, etc—but usually focuses around <code>min-width</code> and <code>max-width</code>.</p>
+            <ul>
+              <li>Modify the width of column in our grid</li>
+              <li>Stack elements instead of float wherever necessary</li>
+              <li>Resize headings and text to be more appropriate for devices</li>
+            </ul>
+            <p>Use media queries responsibly and only as a start to your mobile audiences. For larger projects, do consider dedicated code bases and not layers of media queries.</p>
+          </div>
+          <div class="level-one">
+            <h2>Supported devices</h2>
+            <p>FI-WARE style guide supports a handful of media queries in a single file to help make your projects more appropriate on different devices and screen resolutions. Here's what's included:</p>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Label</th>
+                  <th>Layout width</th>
+                  <th>Column width</th>
+                  <th>Gutter width</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Large display</td>
+                  <td>1200px and up</td>
+                  <td>70px</td>
+                  <td>30px</td>
+                </tr>
+                <tr>
+                  <td>Default</td>
+                  <td>980px and up</td>
+                  <td>60px</td>
+                  <td>20px</td>
+                </tr>
+                <tr>
+                  <td>Portrait tablets</td>
+                  <td>768px and above</td>
+                  <td>42px</td>
+                  <td>20px</td>
+                </tr>
+                <tr>
+                  <td>Phones to tablets</td>
+                  <td>767px and below</td>
+                  <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+                </tr>
+                <tr>
+                  <td>Phones</td>
+                  <td>480px and below</td>
+                  <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+                </tr>
+              </tbody>
+            </table>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="com">/* Large desktop */</span></li><li class="L1"><span class="lit">@media</span><span class="pln"> </span><span class="pun">(</span><span class="pln">min</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1200px</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="pun">...</span><span class="pln"> </span><span class="pun">}</span></li><li class="L2"><span class="pln">&nbsp;</span></li><li class="L3"><span class="com">/* Portrait tablet to landscape and desktop */</span></li><li class="L4"><span class="lit">@media</span><span class="pln"> </span><span class="pun">(</span><span class="pln">min</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">768px</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">and</span><span class="pln"> </span><span class="pun">(</span><span class="pln">max</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">979px</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="pun">...</span><span class="pln"> </span><span class="pun">}</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="com">/* Landscape phone to portrait tablet */</span></li><li class="L7"><span class="lit">@media</span><span class="pln"> </span><span class="pun">(</span><span class="pln">max</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">767px</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="pun">...</span><span class="pln"> </span><span class="pun">}</span></li><li class="L8"><span class="pln">&nbsp;</span></li><li class="L9"><span class="com">/* Landscape phones and down */</span></li><li class="L0"><span class="lit">@media</span><span class="pln"> </span><span class="pun">(</span><span class="pln">max</span><span class="pun">-</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">480px</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="pun">...</span><span class="pln"> </span><span class="pun">}</span></li></ol></pre>
+          </div>
+          <div class="level-one">
+            <h2>Responsive utility classes</h2>
+            <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device. Below is a table of the available classes and their effect on a given media query layout (labeled by device). They can be found in <code>responsive.less</code>.</p>
+            <table class="table table-bordered table-striped responsive-utilities">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Phones <small>767px and below</small></th>
+                  <th>Tablets <small>979px to 768px</small></th>
+                  <th>Desktops <small>Default</small></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th><code>.visible-phone</code></th>
+                  <td class="is-visible">Visible</td>
+                  <td class="is-hidden">Hidden</td>
+                  <td class="is-hidden">Hidden</td>
+                </tr>
+                <tr>
+                  <th><code>.visible-tablet</code></th>
+                  <td class="is-hidden">Hidden</td>
+                  <td class="is-visible">Visible</td>
+                  <td class="is-hidden">Hidden</td>
+                </tr>
+                <tr>
+                  <th><code>.visible-desktop</code></th>
+                  <td class="is-hidden">Hidden</td>
+                  <td class="is-hidden">Hidden</td>
+                  <td class="is-visible">Visible</td>
+                </tr>
+                <tr>
+                  <th><code>.hidden-phone</code></th>
+                  <td class="is-hidden">Hidden</td>
+                  <td class="is-visible">Visible</td>
+                  <td class="is-visible">Visible</td>
+                </tr>
+                <tr>
+                  <th><code>.hidden-tablet</code></th>
+                  <td class="is-visible">Visible</td>
+                  <td class="is-hidden">Hidden</td>
+                  <td class="is-visible">Visible</td>
+                </tr>
+                <tr>
+                  <th><code>.hidden-desktop</code></th>
+                  <td class="is-visible">Visible</td>
+                  <td class="is-visible">Visible</td>
+                  <td class="is-hidden">Hidden</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="level-two">
+            <div class="fi-band"></div><h3>When to use</h3>
+            <p>Use on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. Responsive utilities should not be used with tables, and as such are not supported.</p>
+          </div>
+          <div class="level-two">
+            <div class="fi-band"></div><h3>Responsive utilities test case</h3>
+            <p>Resize your browser or load on different devices to test the above classes.</p>
+            <div class="level-tree">
+              <h4>Visible on...</h4>
+              <p>Green checkmarks indicate that class is visible in your current viewport.</p>
+              <ul class="responsive-utilities-test">
+                <li>Phone<span class="visible-phone">✔ Phone</span></li>
+                <li>Tablet<span class="visible-tablet">✔ Tablet</span></li>
+                <li>Desktop<span class="visible-desktop">✔ Desktop</span></li>
+              </ul>
+            </div>
+            <div class="level-tree">
+              <h4>Hidden on...</h4>
+              <p>Here, green checkmarks indicate that class is hidden in your current viewport.</p>
+              <ul class="responsive-utilities-test hidden-on">
+                <li>Phone<span class="hidden-phone">✔ Phone</span></li>
+                <li>Tablet<span class="hidden-tablet">✔ Tablet</span></li>
+                <li>Desktop<span class="hidden-desktop">✔ Desktop</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>
 
     <!-- FOOTER -->
       <footer>
-        <div class="col-md-12 footer-box">
+        <div class="span12 footer-box">
         <p> Designed by 
           <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
           <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version of FI-WARE Look and feel guide.</p>
@@ -535,10 +708,29 @@ assets/
  <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/bootstrap/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-button.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-affix.js"></script>
+
+    <script src="assets/bootstrap/js/holder.js"></script>
+    <script src="assets/bootstrap/js/prettify.js"></script>
+
+    <script src="assets/bootstrap/js/application.js"></script>
 
 <!-- Scroll up -->
+    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
 
@@ -563,5 +755,7 @@ assets/
         });
       });
     </script>
-  </body>
-</html>
+
+  
+
+</body></html>
