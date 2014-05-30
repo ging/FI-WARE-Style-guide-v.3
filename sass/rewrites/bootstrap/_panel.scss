@@ -1,6 +1,6 @@
 .panel-default > .panel-heading{
-  background-color: $gray-lighter;
-  min-height: 48px;
+  background-color: #F7F8F8;
+  color: $gray-darker;
   h5{
     float: left;
     color: $gray-darker;
@@ -13,11 +13,12 @@
 
 .panel-title {
   padding-top: 0 !important;
+  line-height: 23px;
+  font-family: $corporate-font-family-sans-serif-Regular;
 }
 
 .panel-footer{
-  padding: 8px 15px 26px $zero;
-  background-color: $gray-lighter;
+  background-color: #F7F8F8;
   .view-all{
     float: right;  
   }

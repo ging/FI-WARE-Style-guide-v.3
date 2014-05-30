@@ -19,6 +19,9 @@
   padding-top: 70px;
 }
 
+.bs-glyphicons li:hover {
+  background-color: #002D67;
+}
 
 /* Extra class
 -------------------------------------------------- */
@@ -69,6 +72,11 @@
 /* Side navigation
 -------------------------------------------------- */
 /* First level of nav */
+
+.bs-docs-sidebar.affix {
+top: 60px;
+} 
+
 .bs-docs-sidenav {
   margin-bottom: 30px;
   padding-top: 10px;

@@ -1,12 +1,12 @@
 /*
 Syntax error: Undefined variable: "$corporate-font-family-sans-serif-Regular".
-        on line 23 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins/_banners.scss, in `logo'
+        on line 24 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins/_banners.scss, in `logo'
         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/layouts/_header.scss
         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/layouts/layouts_call.scss
         from line 5 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/FI-WARE_style_guide_call.scss
 
 Backtrace:
-/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins/_banners.scss:23:in `logo'
+/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins/_banners.scss:24:in `logo'
 /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/layouts/_header.scss:2
 /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/layouts/layouts_call.scss:2
 /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/FI-WARE_style_guide_call.scss:5
@@ -111,4 +111,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$corporate-font-family-sans-serif-Regular\".\A         on line 23 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins/_banners.scss, in `logo'\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/layouts/_header.scss\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/layouts/layouts_call.scss\A         from line 5 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/FI-WARE_style_guide_call.scss"; }
+  content: "Syntax error: Undefined variable: \"$corporate-font-family-sans-serif-Regular\".\A         on line 24 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/mixins/_banners.scss, in `logo'\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/layouts/_header.scss\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/layouts/layouts_call.scss\A         from line 5 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/FI-WARE_style_guide_call.scss"; }

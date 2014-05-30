@@ -1833,14 +1833,19 @@ h1[id] {
   padding-top: 70px;
 }
 
+/* line 22, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+.bs-glyphicons li:hover {
+  background-color: #002D67;
+}
+
 /* Extra class
 -------------------------------------------------- */
-/* line 26, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 29, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .row-principal {
   margin-bottom: 120px;
 }
 
-/* line 30, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 33, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .fi-band {
   width: 3px;
   float: left;
@@ -1865,7 +1870,7 @@ h1[id] {
   /* IE6-9 */
 }
 
-/* line 46, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 49, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .thumbnail .fi-band {
   min-height: 27px;
 }
@@ -1873,18 +1878,18 @@ h1[id] {
 /* Bootstrap code examples
 -------------------------------------------------- */
 /* Base class */
-/* line 54, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 57, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .bs-example {
   border: 1px solid #00D3DE;
 }
 
 /* Echo out a label for the example */
-/* line 59, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 62, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .bs-example:after {
   color: #777;
 }
 
-/* line 63, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 66, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .bs-docs-sidebar {
   margin-left: 14px;
 }
@@ -1892,7 +1897,12 @@ h1[id] {
 /* Side navigation
 -------------------------------------------------- */
 /* First level of nav */
-/* line 72, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 76, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+.bs-docs-sidebar.affix {
+  top: 60px;
+}
+
+/* line 80, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .bs-docs-sidenav {
   margin-bottom: 30px;
   padding-top: 10px;
@@ -1900,14 +1910,14 @@ h1[id] {
 }
 
 /* All levels of nav */
-/* line 79, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 87, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .bs-docs-sidebar .nav > li > a {
   display: block;
   color: #9B9B9B;
   padding: 5px 20px;
 }
 
-/* line 86, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 94, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
   text-decoration: none;
@@ -1916,14 +1926,14 @@ h1[id] {
   border-right: 1px solid #00D3DE;
 }
 
-/* line 94, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 102, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .bs-docs-sidebar .nav > li > ul > li > a:hover,
 .bs-docs-sidebar .nav > li > ul > li > a:focus {
   text-decoration: none;
   color: rgba(0, 45, 103, 0.6);
 }
 
-/* line 101, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 109, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > .active:hover > a,
 .bs-docs-sidebar .nav > .active:focus > a {
@@ -1932,65 +1942,65 @@ h1[id] {
   border-color: #00D3DE;
 }
 
-/* line 107, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 115, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .bs-docs-sidebar .nav .nav > li > a {
   font-size: 11px;
 }
 
 /* Code
 -------------------------------------------------- */
-/* line 114, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 122, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .highlight,
 pre {
   background-color: #333;
 }
 
-/* line 118, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 126, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .highlight pre code {
   color: #76A7A3;
 }
 
-/* line 121, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 129, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .na {
   color: #9E9E9E;
 }
 
-/* line 124, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 132, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .nt {
   color: #768392;
 }
 
-/* line 127, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 135, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .nv {
   color: #A35060;
 }
 
-/* line 130, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 138, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .no {
   color: #578628;
 }
 
-/* line 133, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 141, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .s {
   color: #40B5BB;
 }
 
-/* line 136, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 144, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .s1 {
   color: #C96C4D;
 }
 
-/* line 139, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 147, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .o {
   color: #929292;
 }
 
-/* line 142, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 150, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .mi {
   color: #B17E5D;
 }
 
-/* line 145, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
+/* line 153, ../../../sass/FI-WARE_style_guide/docs/docs.scss */
 .k {
   color: #AF8864;
 }

@@ -1,13 +1,11 @@
 /*
-Syntax error: Undefined variable: "$gray".
-        on line 3 of /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/_inputs.scss
-        from line 9 of /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/bootstrap_call.scss
-
-1: /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/bootstrap_call.scss
+Syntax error: Undefined variable: "$zero".
+        on line 9 of /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/_buttons.scss
+        from line 3 of /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/bootstrap_call.scss
 
 Backtrace:
-/Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/_inputs.scss:3
-/Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/bootstrap_call.scss:9
+/Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/_buttons.scss:9
+/Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/bootstrap_call.scss:3
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -85,4 +83,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$gray\".\A         on line 3 of /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/_inputs.scss\A         from line 9 of /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/bootstrap_call.scss\A \A 1: /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/bootstrap_call.scss"; }
+  content: "Syntax error: Undefined variable: \"$zero\".\A         on line 9 of /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/_buttons.scss\A         from line 3 of /Users/crispin/Documents/UPM/my-new-project/sass/rewrites/bootstrap/bootstrap_call.scss"; }

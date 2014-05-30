@@ -8,6 +8,7 @@
 @mixin logo {
   width: 200px;
   display: inline;
+  margin-right: 16px;
   a.logo img{
     width: 51px;
     padding-top: 0;

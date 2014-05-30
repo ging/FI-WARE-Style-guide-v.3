@@ -1,5 +1,10 @@
+.dropdown-menu {
+  border-radius: $zero;
+}
+
 .dropdown-menu > li > a {
   color: #444;
+  padding: 8px 20px;
 }
 
 .dropdown-menu > li > a:hover,
