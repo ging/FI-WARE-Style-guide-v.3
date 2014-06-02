@@ -1,12 +1,10 @@
 /*
 Syntax error: Undefined variable: "$white".
-        on line 6 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/_navbar.scss
+        on line 15 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/_navbar.scss
         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss
 
-1: /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss
-
 Backtrace:
-/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/_navbar.scss:6
+/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/_navbar.scss:15
 /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss:2
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
@@ -85,4 +83,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$white\".\A         on line 6 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/_navbar.scss\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss\A \A 1: /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss"; }
+  content: "Syntax error: Undefined variable: \"$white\".\A         on line 15 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/_navbar.scss\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss"; }

@@ -1,14 +1,12 @@
 /*
 Syntax error: Undefined mixin 'principal-banner'.
-        on line 6 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss, in `principal-banner'
-        from line 6 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss
+        on line 9 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss, in `principal-banner'
+        from line 9 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss
         from line 4 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/pages_call.scss
 
-1: /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/pages_call.scss
-
 Backtrace:
-/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss:6:in `principal-banner'
-/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss:6
+/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss:9:in `principal-banner'
+/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss:9
 /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/pages_call.scss:4
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
@@ -85,4 +83,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'principal-banner'.\A         on line 6 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss, in `principal-banner'\A         from line 6 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss\A         from line 4 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/pages_call.scss\A \A 1: /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/pages_call.scss"; }
+  content: "Syntax error: Undefined mixin 'principal-banner'.\A         on line 9 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss, in `principal-banner'\A         from line 9 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/_frontpage.scss\A         from line 4 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/pages/pages_call.scss"; }

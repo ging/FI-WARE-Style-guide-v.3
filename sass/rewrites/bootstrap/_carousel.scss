@@ -1,0 +1,56 @@
+.carousel-inner,
+ .carousel-inner > .item {
+  max-height: 270px;
+}
+
+.carousel-indicators {
+  bottom: auto !important;
+  left: 1%;
+  width: auto;
+  margin-left: 0;
+}
+
+.carousel-indicators .active {
+  background-color: $brand-primary-2;
+}
+
+
+
+.carousel-caption {
+position: absolute;
+left: 0;
+right: auto;
+bottom: 9px;
+padding-top: 0px;
+padding-bottom: 6px;
+text-align: left;
+text-shadow: none;
+  h5, p{
+    background-color: $brand-primary-2;
+    display: table;
+    padding: 2px 9px;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+
+
+.carousel-control .fa {
+position: absolute;
+top: 50%;
+z-index: 5;
+display: inline-block;
+background-color: rgba(255, 255, 255, 0.4);
+width: 30px;
+height: 30px;
+padding: 5px;
+}
+
+.carousel-control .fa-caret-left {
+left: 0;
+}
+
+.carousel-control .fa-caret-right {
+right: 0;
+}

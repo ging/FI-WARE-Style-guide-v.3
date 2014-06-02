@@ -7942,7 +7942,7 @@ button.close {
 /* line 1, ../sass/FI-WARE_style_guide/general/layouts/_footer.scss */
 footer {
   height: 93px;
-  padding: 7px 15px 0;
+  padding: 30px 15px 0;
   margin-top: 20px;
   border-top: 1px solid #F0F0F0;
 }
@@ -8039,9 +8039,24 @@ a.list-group-item {
 }
 
 /* line 5, ../sass/FI-WARE_style_guide/general/extras/_navbar.scss */
+.navbar-form-search .btn {
+  margin: 0;
+}
+
+/* line 9, ../sass/FI-WARE_style_guide/general/extras/_navbar.scss */
+.navbar-form-search .btn {
+  margin: 2px 0 0 !important;
+}
+
+/* line 14, ../sass/FI-WARE_style_guide/general/extras/_navbar.scss */
 .navbar-form-search input.form-control,
 .navbar-btn {
   background-color: white;
+}
+
+/* line 18, ../sass/FI-WARE_style_guide/general/extras/_navbar.scss */
+.navbar-inverse .logo-header a.brand {
+  color: white;
 }
 
 /****************************** Fonts */
@@ -10297,25 +10312,30 @@ a.list-group-item {
   margin-top: -45px;
 }
 
-/* line 5, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 4, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+#index #wrap {
+  margin: 0 auto -73px;
+}
+
+/* line 8, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .banner-brand {
   background-color: #00D3DE;
   min-height: 85px;
   padding: 11px 15px;
 }
-/* line 7, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 10, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .banner-brand .logo-header a.brand {
   color: #fff !important;
 }
 
-/* line 12, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 15, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .navbar-header h5 {
   color: #CCC;
   margin: 13px 14px 0px;
   font-size: 15px;
 }
 
-/* line 18, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 21, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .marketing {
   position: relative;
   float: left;
@@ -10339,28 +10359,28 @@ a.list-group-item {
   color: #5a5a5a;
 }
 @media (min-width: 768px) {
-  /* line 18, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 21, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .marketing {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 18, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 21, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .marketing {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 18, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 21, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .marketing {
     float: left;
     width: 100%;
   }
 }
 
-/* line 27, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 30, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .marketing header p {
   font-size: 30px !important;
   margin-top: 40px;
@@ -10378,7 +10398,7 @@ a.list-group-item {
 }
 
 @-moz-keyframes dropHeader {
-  /* line 45, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 48, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   0% {
     left: -400px;
     -moz-opacity: 0.1;
@@ -10387,7 +10407,7 @@ a.list-group-item {
     opacity: 0.1;
   }
 
-  /* line 52, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 55, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   100% {
     left: 0px;
     -moz-opacity: 1;
@@ -10398,7 +10418,7 @@ a.list-group-item {
 }
 
 @-webkit-keyframes dropHeader {
-  /* line 62, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 65, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   0% {
     left: -400px;
     -moz-opacity: 0.1;
@@ -10407,7 +10427,7 @@ a.list-group-item {
     opacity: 0.1;
   }
 
-  /* line 69, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 72, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   100% {
     left: 0px;
     -moz-opacity: 1;
@@ -10417,7 +10437,7 @@ a.list-group-item {
   }
 }
 
-/* line 78, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 81, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .marketing header p:nth-child(2) {
   margin-top: 16px;
   margin-bottom: 47px;
@@ -10432,14 +10452,14 @@ a.list-group-item {
   -webkit-animation-duration: 1s;
 }
 @media (max-width: 991px) {
-  /* line 78, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 81, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .marketing header p:nth-child(2) {
     margin-top: 15px;
   }
 }
 
 @-moz-keyframes rHandwrite {
-  /* line 98, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 101, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   0% {
     right: -400px;
     -moz-opacity: 0.1;
@@ -10448,7 +10468,7 @@ a.list-group-item {
     opacity: 0.1;
   }
 
-  /* line 105, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 108, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   100% {
     right: 0px;
     -moz-opacity: 1;
@@ -10459,7 +10479,7 @@ a.list-group-item {
 }
 
 @-webkit-keyframes rHandwrite {
-  /* line 115, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 118, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   0% {
     right: -400px;
     -moz-opacity: 0.1;
@@ -10468,7 +10488,7 @@ a.list-group-item {
     opacity: 0.1;
   }
 
-  /* line 122, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 125, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   100% {
     right: 0px;
     -moz-opacity: 1;
@@ -10478,22 +10498,22 @@ a.list-group-item {
   }
 }
 
-/* line 131, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 134, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .marketing header p span {
   color: #00D3DE;
 }
 
-/* line 135, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 138, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .marketing header p span.low {
   color: #002d67;
 }
 
-/* line 139, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 142, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .marketing header hr {
   margin: 20px 0;
 }
 
-/* line 143, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 146, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .characteristics {
   position: relative;
   float: left;
@@ -10515,28 +10535,28 @@ a.list-group-item {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 143, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 146, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .characteristics {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-  /* line 143, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 146, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .characteristics {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 143, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 146, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .characteristics {
     float: left;
     width: 100%;
   }
 }
 
-/* line 149, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 152, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .characteristic {
   position: relative;
   float: left;
@@ -10559,34 +10579,34 @@ a.list-group-item {
   margin: 0;
 }
 @media (min-width: 768px) {
-  /* line 149, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 152, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .characteristic {
     float: left;
     width: 33.3333333333%;
   }
 }
 @media (min-width: 992px) {
-  /* line 149, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 152, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .characteristic {
     float: left;
     width: 33.3333333333%;
   }
 }
 @media (min-width: 1200px) {
-  /* line 149, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 152, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .characteristic {
     float: left;
     width: 33.3333333333%;
   }
 }
 @media (max-width: 767px) {
-  /* line 149, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+  /* line 152, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
   .characteristic {
     margin-bottom: 40px;
   }
 }
 
-/* line 160, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
+/* line 163, ../sass/FI-WARE_style_guide/pages/_frontpage.scss */
 .characteristic i {
   color: #00D3DE;
 }
@@ -12853,6 +12873,12 @@ pre {
   color: #AF8864;
 }
 
+/* line 162, ../sass/FI-WARE_style_guide/docs/docs.scss */
+.show-grid [class^=col-] {
+  background-color: #E9EAEB;
+  border: 1px solid #D7DADD;
+}
+
 /****************************** Rewrites */
 /****************************** bootstrap-rewrite */
 /* line 1, ../sass/rewrites/bootstrap/_buttons.scss */
@@ -12958,6 +12984,79 @@ pre {
   box-shadow: none;
 }
 
+/* line 1, ../sass/rewrites/bootstrap/_breadcrumbs.scss */
+.breadcrumb li a {
+  color: #777777;
+}
+
+/* line 5, ../sass/rewrites/bootstrap/_breadcrumbs.scss */
+.breadcrumb > .active {
+  color: #002d67;
+}
+
+/* line 2, ../sass/rewrites/bootstrap/_carousel.scss */
+.carousel-inner,
+.carousel-inner > .item {
+  max-height: 270px;
+}
+
+/* line 6, ../sass/rewrites/bootstrap/_carousel.scss */
+.carousel-indicators {
+  bottom: auto !important;
+  left: 1%;
+  width: auto;
+  margin-left: 0;
+}
+
+/* line 13, ../sass/rewrites/bootstrap/_carousel.scss */
+.carousel-indicators .active {
+  background-color: #00d3de;
+}
+
+/* line 19, ../sass/rewrites/bootstrap/_carousel.scss */
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: 9px;
+  padding-top: 0px;
+  padding-bottom: 6px;
+  text-align: left;
+  text-shadow: none;
+}
+/* line 28, ../sass/rewrites/bootstrap/_carousel.scss */
+.carousel-caption h5, .carousel-caption p {
+  background-color: #00d3de;
+  display: table;
+  padding: 2px 9px;
+}
+/* line 33, ../sass/rewrites/bootstrap/_carousel.scss */
+.carousel-caption p {
+  margin-bottom: 0;
+}
+
+/* line 39, ../sass/rewrites/bootstrap/_carousel.scss */
+.carousel-control .fa {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+/* line 50, ../sass/rewrites/bootstrap/_carousel.scss */
+.carousel-control .fa-caret-left {
+  left: 0;
+}
+
+/* line 54, ../sass/rewrites/bootstrap/_carousel.scss */
+.carousel-control .fa-caret-right {
+  right: 0;
+}
+
 /* line 1, ../sass/rewrites/bootstrap/_jumbotron.scss */
 .jumbotron {
   min-height: 88px;
@@ -13022,7 +13121,7 @@ pre {
 }
 /* line 33, ../sass/rewrites/bootstrap/_forms.scss */
 .table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
-  background-color: rgba(231, 231, 219, 0.13);
+  background-color: rgba(219, 229, 231, 0.13);
 }
 
 /* line 37, ../sass/rewrites/bootstrap/_forms.scss */
@@ -13294,57 +13393,68 @@ input[type="color"]:focus,
   border-color: #E5E5E5;
 }
 
-/* line 12, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 11, ../sass/rewrites/bootstrap/_navbar.scss */
+.navbar-default .navbar-text {
+  padding: 14px 0 9px;
+  margin-bottom: 0;
+}
+
+/* line 16, ../sass/rewrites/bootstrap/_navbar.scss */
+.navbar .btn {
+  margin: 6px 0;
+}
+
+/* line 21, ../sass/rewrites/bootstrap/_navbar.scss */
 .navbar .divider-vertical {
   background-color: #f9f9f9;
   border-right: 1px solid #f9f9f9;
   border: none;
 }
 
-/* line 18, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 27, ../sass/rewrites/bootstrap/_navbar.scss */
 .navbar .btn-navbar .icon-bar {
   background-color: #00D3DE;
 }
 
-/* line 22, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 31, ../sass/rewrites/bootstrap/_navbar.scss */
 .nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
   color: #002d67;
 }
 
-/* line 26, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 35, ../sass/rewrites/bootstrap/_navbar.scss */
 .nav-collapse.collapse {
   background-color: #F4F4F4;
 }
 
-/* line 30, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 39, ../sass/rewrites/bootstrap/_navbar.scss */
 ul.navbar-nav > li {
   font-family: "NeoTechstd-regular", Arial, sans-serif;
 }
 
-/* line 33, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 42, ../sass/rewrites/bootstrap/_navbar.scss */
 .navbar-nav.navbar-right:last-child {
   margin-right: 0px;
 }
 
-/* line 37, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 46, ../sass/rewrites/bootstrap/_navbar.scss */
 .navbar-inverse {
   background-color: #00d3de;
   border-color: #00d3de;
 }
 
-/* line 41, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 50, ../sass/rewrites/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: #FFF;
 }
 
-/* line 46, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 55, ../sass/rewrites/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #FFF;
   background-color: #00c0ca !important;
 }
 
-/* line 52, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 61, ../sass/rewrites/bootstrap/_navbar.scss */
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -13352,18 +13462,28 @@ ul.navbar-nav > li {
   background-color: #00a3ab !important;
 }
 
-/* line 57, ../sass/rewrites/bootstrap/_navbar.scss */
+/* line 66, ../sass/rewrites/bootstrap/_navbar.scss */
 .navbar-inverse > .logo-header a.brand {
   color: #FFF !important;
 }
 
 @media (min-width: 768px) {
-  /* line 62, ../sass/rewrites/bootstrap/_navbar.scss */
+  /* line 71, ../sass/rewrites/bootstrap/_navbar.scss */
   .navbar-nav > li > a {
     padding-top: 13px;
     padding-bottom: 10px;
   }
 }
+/* line 1, ../sass/rewrites/bootstrap/_pagination.scss */
+.pagination > li > a, .pagination > li > span {
+  padding: 2px 10px;
+}
+
+/* line 5, ../sass/rewrites/bootstrap/_pagination.scss */
+.pager li > a, .pager li > span {
+  border-radius: 0px;
+}
+
 /* line 1, ../sass/rewrites/bootstrap/_panel.scss */
 .panel-default > .panel-heading {
   background-color: #F7F8F8;
@@ -13395,14 +13515,11 @@ ul.navbar-nav > li {
   float: right;
 }
 
-/* line 1, ../sass/rewrites/bootstrap/_pagination.scss */
-.pagination > li > a, .pagination > li > span {
-  padding: 2px 10px;
-}
-
-/* line 5, ../sass/rewrites/bootstrap/_pagination.scss */
-.pager li > a, .pager li > span {
-  border-radius: 0px;
+/* line 1, ../sass/rewrites/bootstrap/_popovers.scss */
+.popover-title {
+  color: #002759;
+  border-bottom: 1px solid #00D3DE;
+  padding-top: 8px !important;
 }
 
 /* line 1, ../sass/rewrites/bootstrap/_dropdowns.scss */

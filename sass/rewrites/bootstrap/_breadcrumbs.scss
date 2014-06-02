@@ -1,0 +1,7 @@
+.breadcrumb li a {
+  color: $gray-darker;
+}
+
+.breadcrumb > .active {
+  color: $brand-primary;
+}
