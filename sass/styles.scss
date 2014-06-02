@@ -1,23 +1,13 @@
 /****************************** Variables */
-@import "FI-WARE_style_guide/variables";
+@import "FI-WARE_style_guide/general/variables";
 
 
 /****************************** Bootstrap */
 @import "bootstrap";
 
-/****************************** Fonts */
-@import "FI-WARE_style_guide/fonts/FI-WARE/font-face";
-@import "FI-WARE_style_guide/fonts/font-awesome/font-awesome";
-@import "FI-WARE_style_guide/fonts/bootstrap/font-face";
-
-
-/****************************** Mixins */
-@import "FI-WARE_style_guide/mixins/mixins_call";
+/****************************** FI-WARE Style guide */
+@import "FI-WARE_style_guide/FI-WARE_style_guide_call";
 
 
 /****************************** Rewrites */
 @import "rewrites/bootstrap/bootstrap_call";
-
-
-/****************************** FI-WARE Style guide */
-@import "FI-WARE_style_guide/FI-WARE_style_guide_call";

@@ -1,17 +1,13 @@
 /*
-Syntax error: Undefined variable: "$corporate-font-family-sans-serif-Regular".
-        on line 24 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/mixins/_banners.scss, in `logo'
-        from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/layouts/_header.scss
-        from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/layouts/layouts_call.scss
-        from line 5 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/general_call.scss
-        from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/FI-WARE_style_guide_call.scss
+Syntax error: Undefined variable: "$white".
+        on line 6 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/_navbar.scss
+        from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss
+
+1: /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss
 
 Backtrace:
-/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/mixins/_banners.scss:24:in `logo'
-/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/layouts/_header.scss:2
-/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/layouts/layouts_call.scss:2
-/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/general_call.scss:5
-/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/FI-WARE_style_guide_call.scss:2
+/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/_navbar.scss:6
+/Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss:2
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -25,35 +21,6 @@ Backtrace:
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:268:in `block (3 levels) in visit_mixin'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:268:in `map'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:268:in `block (2 levels) in visit_mixin'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:268:in `block in visit_mixin'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:70:in `perform_arguments'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:263:in `visit_mixin'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/crispin/.rvm/gems/ruby-1.9.3-p327/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
@@ -118,4 +85,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$corporate-font-family-sans-serif-Regular\".\A         on line 24 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/mixins/_banners.scss, in `logo'\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/layouts/_header.scss\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/layouts/layouts_call.scss\A         from line 5 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/general_call.scss\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/FI-WARE_style_guide_call.scss"; }
+  content: "Syntax error: Undefined variable: \"$white\".\A         on line 6 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/_navbar.scss\A         from line 2 of /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss\A \A 1: /Users/crispin/Documents/UPM/my-new-project/sass/FI-WARE_style_guide/general/extras/extras_call.scss"; }

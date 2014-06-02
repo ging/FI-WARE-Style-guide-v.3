@@ -16,6 +16,19 @@
   padding: 0 6px;
 }
 
+.form-control-feedback {
+  top: 20px;
+  height: 33px;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+  top: -4px;
+}
+@media (min-width: $screen-sm-max) {
+  .form-inline .has-feedback .form-control-feedback, .navbar-form .has-feedback .form-control-feedback {
+    top: -4px;
+  }
+}
 
 .table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
   background-color: rgba(231, 231, 219, 0.13);

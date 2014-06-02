@@ -1,0 +1,152 @@
+
+/* IDENTITY
+-------------------------------------------------- */
+.identity-guide section .alert{
+  display: block;
+}
+.typo > .level-two{
+  clear: both;
+}
+
+.typo > .level-two h4{
+  float: left;
+}
+
+.font-awesome > .well{
+  margin-top: 20px;
+}
+/* COLORS */
+
+.color-bluedark-tx{
+  color:#002759;
+}
+
+.color-bluelight-tx{
+  color:#00D3DE;
+}
+
+.color-yellow-tx{
+  color: #FFE616;
+}
+
+.color-orange-tx{
+  color: #FFB900;
+}
+
+.color-red-tx{
+  color: #FF0055;
+}
+
+.color-green-tx{
+  color: #A7EB00;
+}
+
+.color-graylight-tx{
+  color: #F5F5F5;
+}
+
+.color-graymedium-tx{
+  color: #E2E2E2;
+}
+
+.color-graydark-tx{
+  color: #C8C8C8;
+}
+
+
+.color-bluedark-bk{
+  background-color: #002759;
+}
+
+.color-bluelight-bk{
+  background-color: #00D3DE;
+}
+
+.color-yellow-bk{
+  background-color: #FFE616;
+}
+
+.color-orange-bk{
+  background-color: #FFB900;
+}
+
+.color-red-bk{
+  background-color: #FF0055;
+}
+
+.color-green-bk{
+  background-color: #A7EB00;
+}
+
+.color-graylight-bk{
+  background-color: #F5F5F5;
+}
+
+.color-graymedium-bk{
+  background-color: #E2E2E2;
+}
+
+.color-graydark-bk{
+  background-color: #C8C8C8;
+}
+
+.color small{
+  display: block;
+}
+.references img{
+  margin: 10px 0;
+}
+
+.color .row{
+  margin: 0;
+}
+.banners .banner {
+  width: 100%;
+  height: 200px;
+}
+
+.brand h6 {
+  margin-top: 4px;
+}
+.banners .banner .logo-banner .brand {
+  color: #fff;
+  padding: 0;
+  width: auto;
+  float: none;
+  margin: 22px 0 0 3px;
+  font-family: "NeoTechstd-Regular";
+  display: inline-block;
+  font-weight: normal;
+  font-size: 39px;
+}
+
+.banner .ribbon{
+  background: url('../img/FI-WARE_style_guide/index/ribon_index.png') no-repeat;
+  float: right;
+  padding: 0px 299px 167px;
+  right: 19px;
+  position: absolute;
+  z-index: 1;
+}
+
+.banner .logo-banner {
+height: 100px;
+display: inline;
+position: absolute;
+z-index: 9;
+margin: 44px 0px 0px 20px;
+}
+
+.logo-banner img{
+  width: 70px;
+  padding-top: 0;
+  float: left;
+}
+
+.logo-banner .brand a:hover{
+  text-decoration: none;
+}
+
+.logo-banner .brand span{
+  color: #002d67 !important;
+}

@@ -1,15 +1,10 @@
-/****************************** mixins */
-@import "mixins/mixins_call";
+/****************************** General */
+@import "general/general_call";
 
-/****************************** layouts */
-@import "layouts/layouts_call";
 
-/****************************** pages */
-@import "frontpage";
-
-@import "identity";
+/****************************** Pages */
+@import "pages/pages_call";
 
 
 /****************************** Docs for FI-WARE Style Guide */
-
 @import "docs/docs";
