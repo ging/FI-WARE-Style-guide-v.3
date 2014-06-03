@@ -9,6 +9,15 @@
     <!-- Bootstrap styles -->
     <link href="stylesheets/styles.css" rel="stylesheet">
 
+    <!-- addons styles -->
+    <link href="addons/autosize/css/autosize.css" rel="stylesheet">
+    <link href="addons/select2/css/select2.css" rel="stylesheet">
+    <link href="addons/tour/css/bootstrap-tour.css" rel="stylesheet">
+    <link href="addons/backstretch/css/backstretch.css" rel="stylesheet">
+    <link href="addons/maxlength/css/maxlength.css" rel="stylesheet">
+    <link href="addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="addons/select2/css/select-2-rewrite.css" rel="stylesheet">
+
 
     <!-- Fav and touch icons -->
     <link rel="shortcut icon" href="img/logos/ico/favicon.png">
@@ -31,13 +40,10 @@
             <i class="fa fa-angle-double-down"></i>
           </a>
           <div class="logo-header">
-              <a href="index.html" class="logo">
-                <img alt="FI-WARE" src="img/logos/header-logo.png">
-              </a>
-              <a href="index.html" class="brand">
-                <span>FI-</span>WARE
-              </a>    
-            </div>
+            <a href="index.html">
+              <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+            </a>    
+          </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -95,18 +101,21 @@
                 Backstretch
               </h1>
               <p class="lead">a simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element.<small>You can see more in <a href="https://github.com/srobbin/jquery-backstretch">GitHub</a></small></p>
-              <div class="level-one">
-               
-              
-                  <h3>Slideshow</h3>  
-                  <div class="thumbnail" style="min-height: 251px">
-                    <div class="backstretch-example-2">
-                      <div class="backstretch">
-                      </div>
+
+
+              <div class="level-two" style="min-height: 200px">
+
+                  
+                    <div class="backstretch-example">
+                      <div class="backstretch"></div>
                     </div>
-                  </div>
-                    
-              </div>          
+            
+              </div>
+              <div class="level-two" style="min-height: 200px">
+                <div class="backstretch-example-2">
+                  <div class="backstretch"></div>
+                </div>                     
+              </div>
             </div>
          
 
@@ -133,7 +142,7 @@
                   <h5><i class="fa fa-check"></i> IE7 Support</h5>
                 </div>
                 <div class="col-md-4">
-                  <h5><i class="fa fa-eye"></i> Perfect on Retina Displays</h5>
+                  <h5><i class="fa fa-eye"></i> For Retina Displays</h5>
                 </div>
                 <div class="col-md-4">
                   <h5><i class="fa fa-thumbs-o-up"></i> Made for Bootstrap</h5>
@@ -142,7 +151,7 @@
                   <h5><i class="fa fa-desktop"></i> Desktop Friendly</h5>
                 </div>
                 <div class="col-md-4">
-                  <h5><i class="fa fa-search"></i> Screen Reader Compatible</h5>
+                  <h5><i class="fa fa-search"></i> Screen Compatible</h5>
                 </div>
               </div>
               <div class="well">
@@ -182,7 +191,7 @@
               <h1 id="select2" class="page-header">
                 Select2
               </h1>
-              <p class="lead">Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.</p> 
+              <p class="lead">Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results. <small>You can see more in <a href="https://github.com/ivaynberg/select2">GitHub</a></small></p> 
 
               <div class="level-tree">
                 <h3>Search / Select</h3>
@@ -295,28 +304,28 @@
               placement: "right",
           },
           {
-              element: "#font-awesome h1",
+              element: "#font-awesome",
               title: "FONT AWESOME",
               content: "Third js plugin added.",
               orphan: true,
               placement: "right"
           },
                     {
-             element: "#maxlength h1",
+             element: "#maxlength",
               title: "MAXLENGHT",
               content: "Fourth js plugin added.",
               orphan: true,
               placement: "right",
           },
           {
-             element: "#select2 h1",
+             element: "#select2",
               title: "SELECT2",
               content: "Fifth js plugin added.",
               orphan: true,
               placement: "right",
           },
           {
-             element: "#autosize h1",
+             element: "#autosize",
               title: "AUTOSIZE",
               content: "Sixth js plugin added.",
               orphan: true,
@@ -377,6 +386,17 @@
           duration: 4000
       });
     </script>
+    <script>
+
+  // You may also attach Backstretch to a block-level element
+  $(".backstretch-example").backstretch("path/to/image.jpg");
+
+  // Or, to start a slideshow, just pass in an array of images
+  $(".backstretch-example").backstretch([
+    "addons/backstretch/img/backstretch-example1.jpg",
+    "addons/backstretch/img/backstretch-example2.jpg"   
+  ], {duration: 4000});
+</script>
 <!-- Maxlength -->
     <script src="addons/maxlength/js/bootstrap-maxlength.js"></script>
     <script>

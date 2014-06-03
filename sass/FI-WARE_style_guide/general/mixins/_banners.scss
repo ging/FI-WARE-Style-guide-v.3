@@ -4,8 +4,13 @@
   padding: 11px 15px;
 }
 
+@mixin logo-img {
+  max-height: 44px;
+  min-height: 44px;
+  width: 160px;
+}
 
-@mixin logo {
+@mixin logo-text {
   width: 200px;
   display: inline;
   margin-right: 16px;
