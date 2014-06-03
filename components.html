@@ -2,34 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>FI-WARE web style · Components</title>
+    <title>FI-WARE web style - Components</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FI-WARE web style">
-    <meta name="author" content="@crispinh2o DIT UPM and Ogilvy">
+    <meta name="author" content="DIT UPM and Ogilvy">
 
-    <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
-    <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
-    <!-- FI-WARE styles -->
-    <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
+    <!-- Styles -->
+    <link href="stylesheets/styles.css" rel="stylesheet">
 
-    <!-- addons styles -->
-    <link href="assets/addons/font-awesome/css/font-awesome.css" rel="stylesheet">
-
-
-
-<!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="./assets/FIWARE/img/logos/ico/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/FIWARE/img/logos/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/FIWARE/img/logos/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/FIWARE/img/logos/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="./assets/FIWARE/img/logos/ico/apple-touch-icon-57-precomposed.png">
-
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/logos/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logos/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logos/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logos/ico/apple-touch-icon-72-precomposed.png"
+    <link rel="apple-touch-icon-precomposed" href="img/logos/ico/apple-touch-icon-57-precomposed.png">
   <head>
 
   <body class="components" data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
@@ -43,14 +29,11 @@
           <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <i class="fa fa-angle-double-down"></i>
           </a>
-          <div class="logo-header in">
-              <a href="index.html" class="logo">
-                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
-              </a>
-              <a href="index.html" class="brand">
-                <span>FI-</span>WARE
-              </a>    
-            </div>
+          <div class="logo-header">
+            <a href="index.html">
+              <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+            </a>    
+          </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -2383,41 +2366,31 @@
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <div class="logo-header">
+              <a href="index.html">
+                <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+              </a>    
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-collapse"> 
+              <i class="fa fa-angle-double-down"></i>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="header-collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
+              <li><a href="#">Link</a></li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
+            <form class="navbar-form navbar-form-search navbar-left" role="search">
+              <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                </span>
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                 <ul class="dropdown-menu" role="menu">
@@ -2436,12 +2409,14 @@
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"logo-header"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"index.html"</span> <span class="na">src=</span><span class="s">"img/logos/FI-WARE/FI-WARE_logo-c.svg"</span><span class="nt">&gt;</span><span class="nt">&lt;a</span><span class="nt">&gt;</span>   
+        <span class="nt">&lt;div</span><span class="nt">&gt;</span>    
+      <span class="nt">&lt;div</span><span class="nt">&gt;</span>
+
       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle navigation<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-angle-double-down"</span><span class="nt">&gt;&lt;/i&gt;</span>
       <span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Brand<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -2450,28 +2425,17 @@
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-example-navbar-collapse-1"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>Dropdown <span class="nt">&lt;b</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/b&gt;&lt;/a&gt;</span>
-          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"divider"</span><span class="nt">&gt;&lt;/li&gt;</span>
-            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>One more separated link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;/ul&gt;</span>
-        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
       <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"navbar-form navbar-left"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"navbar-form navbar-form-search navbar-left"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&lt;/i&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;/form&gt;</span>
       <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
         <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>Dropdown <span class="nt">&lt;b</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/b&gt;&lt;/a&gt;</span>
           <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
@@ -2506,31 +2470,36 @@
       <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <div class="logo-header">
+              <a href="index.html">
+                <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+              </a>    
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"> 
+              <i class="fa fa-angle-double-down"></i>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
+            <form class="navbar-form navbar-form-search navbar-left" role="search">
+              <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                </span>
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
             </form>
           </div>
         </div>
       </nav>
     </div>
-<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"navbar-form navbar-left"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/form&gt;</span>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"navbar-form navbar-form-search navbar-left"</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&lt;/i&gt;</span>
+          <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/form&gt;</span>
 </code></pre></div>
 
   <div class="bs-callout bs-callout-warning">
@@ -2550,13 +2519,14 @@
         <nav class="navbar navbar-default" role="navigation">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+              <div class="logo-header">
+                <a href="index.html">
+                  <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+                </a>    
+              </div>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3"> 
+                <i class="fa fa-angle-double-down"></i>
               </button>
-              <a class="navbar-brand" href="#">Brand</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
               <button type="button" class="btn btn-default navbar-btn">Sign in</button>
@@ -2579,13 +2549,14 @@
       <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <div class="logo-header">
+              <a href="index.html">
+                <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+              </a>    
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4"> 
+              <i class="fa fa-angle-double-down"></i>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
             <p class="navbar-text">Signed in as Mark Otto</p>
@@ -2603,13 +2574,14 @@
       <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <div class="logo-header">
+              <a href="index.html">
+                <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+              </a>    
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5"> 
+              <i class="fa fa-angle-double-down"></i>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-5">
             <p class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
@@ -2633,13 +2605,14 @@
         <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <div class="logo-header">
+              <a href="index.html">
+                <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+              </a>    
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6"> 
+              <i class="fa fa-angle-double-down"></i>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
@@ -2675,13 +2648,14 @@
         <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <div class="logo-header">
+              <a href="index.html">
+                <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+              </a>    
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7"> 
+              <i class="fa fa-angle-double-down"></i>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
           </div>
 
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
@@ -2718,13 +2692,14 @@
         <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <div class="logo-header">
+              <a href="index.html">
+                <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+              </a>    
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8"> 
+              <i class="fa fa-angle-double-down"></i>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -2753,13 +2728,14 @@
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+            <div class="logo-header">
+              <a href="index.html">
+                <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-w.svg">
+              </a>    
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9"> 
+              <i class="fa fa-angle-double-down"></i>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -4243,12 +4219,14 @@
  <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/docs/docs.min.js"></script>
 
-<!-- Scroll up -->
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
+    <!-- Scroll up -->
+    <script type="text/javascript" src="addons/scroll-up/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="addons/scroll-up/js/jquery.scrollUp.js"></script>
+
 
     <script>
       // scrollUp full options

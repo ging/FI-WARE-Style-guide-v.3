@@ -7,29 +7,15 @@
     <meta name="description" content="FI-WARE web style">
     <meta name="author" content="DIT UPM and Ogilvy">
 
-    <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
-    <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
-    <!-- FI-WARE styles -->
-    <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-
-    <!-- addons styles -->
-
-    <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
+    <!-- Styles -->
+    <link href="stylesheets/styles.css" rel="stylesheet">
 
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/FIWARE/img/logos/ico/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/FI-WARE/img/logos/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logos/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logos/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logos/ico/apple-touch-icon-72-precomposed.png"
+    <link rel="apple-touch-icon-precomposed" href="img/logos/ico/apple-touch-icon-57-precomposed.png">
   <head>
 
   <body id="index">
@@ -39,17 +25,11 @@
       ================================================== -->
 
 
-      <header class="jumbotron subhead super-title" id="index">
-        <div class="content">
-          <div class="logo-header">
-            <a href="#" class="logo">
-              <img alt="FI-WARE" class="logo" src="assets/FI-WARE/img/logos/logo-white.png">
-            </a>
-            <a href="#" class="brand">
-              <span>FI-</span>WARE
-              <h6 class="color-bluedark-tx"><span>OPEN APIs FOR OPEN MINDS</span></h6>
-            </a>    
-          </div>
+      <header class="banner-brand">
+        <div class="logo-header">
+          <a href="index.html">
+            <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo_slogan-w.svg">
+          </a>  
         </div>
       </header>
       
@@ -60,14 +40,14 @@
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#principal-menu">
               <i class="fa fa-angle-double-down"></i>
             </a>
-            <h5 class="sg">Style guide</h5>
+            <h5>Style guide</h5>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="principal-menu">
             <ul class="nav navbar-nav">
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap  <i class="fa fa-angle-double-down"></i></a>
@@ -100,23 +80,25 @@
       <!-- Marketing messaging and featurettes
       ================================================== -->
 
-      <div class="container marketing">
-        <p class="handwrite1">Designed for everyone, everywhere. </p>
-        <p class="handwrite2">Need reasons to love <span><span class="low">FI-</span>WARE</span> Style? Look!! </p>
+      <div class="marketing">
+        <header>
+          <p>Designed for everyone, everywhere. </p>
+          <p>Need reasons to love <span><span class="low">FI-</span>WARE</span> Style? Look!! </p>
+        </header>
         <hr>
         <!-- Three columns of text below the carousel -->
-        <div class="characteristic">
-          <div class="col-md-4">
+        <div class="characteristics">
+          <div class="characteristic">
             <i class="fa fa-desktop fa-4x"></i>
             <p>The HTML5 test score is an indication of how well your browser supports the upcoming HTML5 standard and related specifications. Even though the specification isn't finalized yet.</p>
           </div><!-- /.span4 -->
 
-          <div class="col-md-4">
+          <div class="characteristic">
             <i class="fa fa-eye fa-4x"></i>
             <p>With Fi-ware web style, we've gone fully responsive. Our components are scaled according to a range of resolutions and devices to provide a consistent experience, no matter what.</p>
           </div><!-- /.span4 -->
 
-          <div class="col-md-4">
+          <div class="characteristic">
             <i class="fa fa-thumbs-o-up fa-4x"></i>
             <p>CSS3 facilitates publication of content in multiple presentation formats based on nominal parameters. Include explicit user preferences, different web browsers, the geographic locations...</p>
           </div><!-- /.span4 -->
@@ -125,28 +107,26 @@
   
       <div id="push"></div>
       
-    </div><!--/.wrap -->
+    </div><!--/#wrap -->
     <!-- FOOTER -->
       <footer>
-        <div class="col-md-12 footer-box">
-          <p> Designed by 
-            <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
-            <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2013  //   FI-WARE Style guide replace and extend the last version.
-          </p>
-        </div>
+        <p> Designed by 
+          <a href="https://github.com/ging" target="_blank">GING</a> UPM and 
+          <a href="http://www.ogilvy.es/html/es/" target="_blank">Ogilvy</a> · 2014  //   FI-WARE Style guide replace and extend the last version.
+        </p> 
       </footer>
 
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/docs/docs.min.js"></script>
 
-<!-- Scroll up -->
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
+    <!-- Scroll up -->
+    <script type="text/javascript" src="addons/scroll-up/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="addons/scroll-up/js/jquery.scrollUp.js"></script>
 
     <script>
 

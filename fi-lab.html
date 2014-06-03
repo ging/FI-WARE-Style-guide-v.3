@@ -1,35 +1,22 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>FI-WARE web style · Wordpress</title>
+    <title>FI-WARE web style - Wordpress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FI-WARE web style">
-    <meta name="author" content="@crispinh2o DIT UPM and Ogilvy">
+    <meta name="author" content="DIT UPM and Ogilvy">
 
     <!-- Bootstrap styles -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/bootstrap/css/sticky-footer-navbar.css" rel="stylesheet">
-    <!-- Bootstrap styles for this guide-->
-    <link href="assets/bootstrap/css/docs.min.css" rel="stylesheet">
-    <!-- Bootstrap rewrite styles for 3.1.1-->
-    <link href="assets/bootstrap-rewrite/bootstrap-rewrite.css" rel="stylesheet">
-    <!-- FI-WARE styles -->
-    <link href="assets/FI-WARE/css/fonts.css" rel="stylesheet">
-    <link href="assets/FI-WARE/css/FI-style.css" rel="stylesheet">
-
-    <!-- addons styles -->
-    <link href="assets/addons/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/addons/backstretch/css/backstretch.css" rel="stylesheet">
-
+    <link href="stylesheets/styles.css" rel="stylesheet">
 
 
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/FIWARE/img/logos/ico/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/FIWARE/img/logos/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/logos/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logos/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/logos/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/logos/ico/apple-touch-icon-72-precomposed.png"
+    <link rel="apple-touch-icon-precomposed" href="img/logos/ico/apple-touch-icon-57-precomposed.png">
   <head>
   <body class="wordpress" data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
     <div id="wrap">
@@ -42,14 +29,11 @@
           <a type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <i class="fa fa-angle-double-down"></i>
           </a>
-          <div class="logo-header in">
-              <a href="index.html" class="logo">
-                <img alt="FI-WARE" src="assets/FI-WARE/img/logos/header-logo.png">
-              </a>
-              <a href="index.html" class="brand">
-                <span>FI-</span>WARE
-              </a>    
-            </div>
+          <div class="logo-header">
+            <a href="index.html">
+              <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+            </a>   
+          </div>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -177,6 +161,75 @@ wordpress-bootstrap/
 
             </div><!-- /.install -->
 
+          
+          <!-- Headers
+            ================================================== -->
+            <div class="bs-docs-section">
+              <h1 id="header-wp" class="page-header">
+                Headers
+              </h1>
+              <p class="lead">We have two options for FI-WARE and FI-Lab.</p>
+              <h2>FI-WARE header.</h2>
+              <div class="bs-example">
+                <nav class="navbar navbar-default" role="navigation">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <div class="logo-header">
+                        <a href="index.html">
+                          <img alt="FI-WARE" src="img/logos/FI-WARE/FI-WARE_logo-c.svg">
+                        </a>    
+                      </div>
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3"> 
+                        <i class="fa fa-angle-double-down"></i>
+                      </button>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"logo-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"index.html"</span> <span class="na">src=</span><span class="s">"img/logos/FI-WARE/FI-WARE_logo-c.svg"</span><span class="nt">&gt;</span><span class="nt">&lt;a</span><span class="nt">&gt;</span>   
+      <span class="nt">&lt;div</span><span class="nt">&gt;</span>    
+    <span class="nt">&lt;div</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.container-fluid --&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div>
+
+              <h2>FI-Lab header.</h2>
+              <div class="bs-example">
+                <nav class="navbar navbar-default" role="navigation">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <div class="logo-header">
+                        <a href="index.html">
+                          <img alt="FI-WARE" src="img/logos/Lab/FI-Lab_logo-c.svg">
+                        </a>    
+                      </div>
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3"> 
+                        <i class="fa fa-angle-double-down"></i>
+                      </button>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"logo-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"index.html"</span> <span class="na">src=</span><span class="s">"img/logos/Lab/FI-Lab_logo-c.svg"</span><span class="nt">&gt;</span><span class="nt">&lt;a</span><span class="nt">&gt;</span>   
+      <span class="nt">&lt;div</span><span class="nt">&gt;</span>    
+    <span class="nt">&lt;div</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.container-fluid --&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div>
+            </div><!-- /.headers -->
+
 
           <!-- Posts
             ================================================== -->
@@ -189,14 +242,6 @@ wordpress-bootstrap/
                 <h4>Web font in Firefox</h4>
                 <p>For a correct visualization we will need to make in head´s lines: <code>< link ></code> <code>rel="stylesheet"</code> <code>type="text/css"</code> <code>href="http://</code><code>"site"/wp-content/themes/wordpress-bootstrap</code> <code>.../fonts.css"</code>
                 <a href="http://wordpress.org/support/topic/font-face-not-working-in-firefox-live-but-working-locally">Wordpress souport.</a></p>
-              </div>
-              <div class="level-two">
-                <h3><div class="fi-band"></div>Lead</h3>
-                <p class="lead">FI-WARE style guide's is immersed in sub-world in this tutorial. Keep calm!</p>
-              </div>
-              <div class="level-two">
-                <h3><div class="fi-band"></div>Read more</h3>
-                <p class="lead">FI-WARE style guide's is immersed in sub-world in this tutorial. Keep calm!</p>
               </div>
             </div><!-- /.posts -->
             
@@ -250,7 +295,7 @@ wordpress-bootstrap/
 
                     <div class="caption">
                       <p>We have created here a Youtube video galery with Jquery.js</p>
-                      <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-Lab.jpg" download="index_FI-Lab.jpg" class="btn btn-primary">download</a> <a href="#example-3" data-toggle="modal" class="btn">See</a></p>
+                      <a href="img/FI-WARE_style_guide/wordpress/examples/index_FI-Lab.jpg" download="index_FI-Lab.jpg" class="btn btn-primary">download</a> <a href="#example-3" data-toggle="modal" class="btn">See</a></p>
                     </div>
                   </div>
                 </li>
@@ -263,7 +308,7 @@ wordpress-bootstrap/
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 class="modal-title" id="myModalLabel">Index of FI-LAB</h3>
-                        <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-WARE.jpg" download="index_FI-WARE.jpg">download image</a></h6>
+                        <h6><a href="img/FI-WARE_style_guide/wordpress/examples/index_FI-WARE.jpg" download="index_FI-WARE.jpg">download image</a></h6>
                       </div>
                       
                       <div class="modal-body">
@@ -289,7 +334,7 @@ wordpress-bootstrap/
                     </div>
                     <div class="caption">
                       <p>Clean and simple</p>
-                      <a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg" download="by-admin.jpg" class="btn btn-primary">download</a> <a href="#example-4" data-toggle="modal" class="btn">See</a></p>
+                      <a href="img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg" download="by-admin.jpg" class="btn btn-primary">download</a> <a href="#example-4" data-toggle="modal" class="btn">See</a></p>
                     </div>
                   </div>
                 </li>
@@ -301,7 +346,7 @@ wordpress-bootstrap/
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 class="modal-title" id="myModalLabel">Comments by Admin of FI-LAB</h3>
-                        <h6><a href="assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin_FI-WARE.jpg" download="by-admin_FI-WARE.jpg">download image</a></h6>
+                        <h6><a href="img/FI-WARE_style_guide/wordpress/examples/by-admin_FI-WARE.jpg" download="by-admin_FI-WARE.jpg">download image</a></h6>
                       </div>
                       
                       <div class="modal-body">
@@ -323,6 +368,7 @@ wordpress-bootstrap/
                 <li><a href="#template-wp">Template</a></li>
                 <li><a href="#css-wp">Css</a></li>
                 <li><a href="#install-wp">Install</a></li>
+                <li><a href="#header-wp">Headers</a></li>
                 <li><a href="#posts-wp">Posts</a></li>
                 <li><a href="#twitter-wp">Twitter timeline</a></li>
                 <li><a href="#examples-wp">Examples</a></li>
@@ -348,21 +394,22 @@ wordpress-bootstrap/
       <!-- Le javascript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
-      <script src="assets/bootstrap/js/jquery.min.js"></script>
-      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="javascripts/bootstrap/jquery.min.js"></script>
+      <script type="text/javascript" src="javascripts/bootstrap/bootstrap.min.js"></script>
+      <script type="text/javascript" src="javascripts/docs/docs.min.js"></script>
 
 
-<!-- Backstretch -->
-      <script src="assets/addons/backstretch/js/jquery.backstretch.min.js"></script>
+      <!-- Backstretch -->
+      <script src="addons/backstretch/js/jquery.backstretch.min.js"></script>
       <script>
-        $(".wp-example3").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg");
-        $(".wp-example4").backstretch("assets/FI-WARE/img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg");
+        $(".wp-example3").backstretch("img/FI-WARE_style_guide/wordpress/examples/index_FI-LAB.jpg");
+        $(".wp-example4").backstretch("img/FI-WARE_style_guide/wordpress/examples/by-admin.jpg");
       </script>
 
-<!-- Scroll up -->
   
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="assets/addons/scroll-up/js/jquery.scrollUp.js"></script>
+      <!-- Scroll up -->
+      <script type="text/javascript" src="addons/scroll-up/js/jquery.easing.min.js"></script>
+      <script type="text/javascript" src="addons/scroll-up/js/jquery.scrollUp.js"></script>
 
     <script>
 
